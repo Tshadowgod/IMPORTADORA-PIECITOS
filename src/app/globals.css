@@ -1,0 +1,305 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/*  Tokens de marca — Importadora Piecitos                             */
+/*  Paleta tomada del mockup: selva, piedra, lava y sol.               */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  /* Verdes de la selva */
+  --color-jungle-50: #f0f7e9;
+  --color-jungle-100: #dcedca;
+  --color-jungle-200: #bcdc9c;
+  --color-jungle-300: #93c76a;
+  --color-jungle-400: #6fae45;
+  --color-jungle-500: #549330;
+  --color-jungle-600: #3f7724;
+  --color-jungle-700: #335e1f;
+  --color-jungle-800: #2a4b1d;
+  --color-jungle-900: #1e3714;
+
+  /* Papel / pergamino: el fondo general del sitio */
+  --color-cream-50: #fdfaf1;
+  --color-cream-100: #f8f2e2;
+  --color-cream-200: #f1e7cf;
+  --color-cream-300: #e6d8b6;
+
+  /* Piedra: tarjetas de categoría y footer */
+  --color-stone-warm-100: #e8dfc9;
+  --color-stone-warm-200: #d8ccae;
+  --color-stone-warm-300: #c2b190;
+  --color-stone-warm-400: #a8946f;
+  --color-stone-warm-500: #8b7454;
+
+  /* Sol / madera */
+  --color-sun-300: #f7d95c;
+  --color-sun-400: #f0c11c;
+  --color-sun-500: #d9a406;
+  --color-wood-400: #b98341;
+  --color-wood-500: #96632c;
+
+  /* Lava y acentos */
+  --color-lava-400: #f4813a;
+  --color-lava-500: #e2571e;
+  --color-lava-600: #c23f11;
+  --color-berry-400: #ef5f7e;
+  --color-berry-500: #d93a5e;
+  --color-sky-egg: #7ec8e3;
+  --color-grape-400: #9b6fd0;
+
+  /* Tipografías (se enlazan desde layout.tsx con next/font) */
+  --font-display: var(--font-fredoka), system-ui, sans-serif;
+  --font-body: var(--font-nunito), system-ui, sans-serif;
+
+  /* Radios generosos, como en el mockup */
+  --radius-card: 1.25rem;
+  --radius-blob: 2rem;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream-100);
+    color: var(--color-jungle-900);
+    font-family: var(--font-body);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.75), transparent 42%),
+      radial-gradient(circle at 88% 0%, rgba(214, 199, 160, 0.32), transparent 48%),
+      radial-gradient(circle at 50% 100%, rgba(111, 174, 69, 0.07), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* Foco visible y con la identidad de la marca */
+  :focus-visible {
+    outline: 3px solid var(--color-sun-400);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Utilidades de la marca                                             */
+/* ------------------------------------------------------------------ */
+
+@utility text-outline-white {
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke fill;
+}
+
+@utility text-outline-dark {
+  -webkit-text-stroke: 2px var(--color-jungle-900);
+  paint-order: stroke fill;
+}
+
+/* Tarjeta de piedra usada en las categorías */
+@utility stone-tile {
+  background-image: linear-gradient(
+    160deg,
+    var(--color-stone-warm-100) 0%,
+    var(--color-stone-warm-200) 55%,
+    var(--color-stone-warm-300) 100%
+  );
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -4px 10px rgba(120, 100, 68, 0.35),
+    0 6px 14px rgba(90, 74, 48, 0.25);
+}
+
+/* Barra verde con brillo superior, como el nav y el bloque de beneficios */
+@utility jungle-bar {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-jungle-400) 0%,
+    var(--color-jungle-600) 55%,
+    var(--color-jungle-700) 100%
+  );
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.25),
+    0 4px 12px rgba(30, 55, 20, 0.3);
+}
+
+/* Botón principal con volumen */
+@utility btn-3d {
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.4),
+    0 4px 0 rgba(0, 0, 0, 0.22),
+    0 8px 16px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+}
+
+@utility btn-3d-press {
+  &:active {
+    transform: translateY(3px);
+    box-shadow:
+      inset 0 2px 0 rgba(255, 255, 255, 0.3),
+      0 1px 0 rgba(0, 0, 0, 0.22);
+  }
+}
+
+/* Franja de tierra del footer */
+@utility dirt-band {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-stone-warm-300) 0%,
+    var(--color-stone-warm-400) 40%,
+    var(--color-stone-warm-500) 100%
+  );
+}
+
+/* Oculta la barra de scroll en los carruseles horizontales */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Animaciones                                                        */
+/* ------------------------------------------------------------------ */
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine-sweep {
+  from {
+    transform: translateX(-130%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.08) translate(-1.5%, -1%);
+  }
+}
+
+.animate-float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+.animate-wiggle {
+  animation: wiggle 2.4s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 1.6s ease-in-out infinite;
+}
+.animate-fade-up {
+  animation: fade-up 480ms ease-out both;
+}
+.animate-ken-burns {
+  animation: ken-burns 18s ease-in-out alternate infinite;
+}
+
+/* Brillo que recorre la foto al pasar el mouse */
+.img-shine {
+  position: relative;
+  overflow: hidden;
+}
+.img-shine::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 45%,
+    transparent 100%
+  );
+  transform: translateX(-130%) skewX(-18deg);
+  opacity: 0;
+}
+.group:hover .img-shine::after,
+.img-shine:hover::after {
+  opacity: 1;
+  animation: shine-sweep 700ms ease;
+}
+
+/* Separador de huellas entre secciones */
+.paw-divider {
+  height: 18px;
+  background-image: radial-gradient(circle at 30% 40%, var(--color-lava-500) 1.6px, transparent 1.8px),
+    radial-gradient(circle at 42% 55%, var(--color-lava-500) 1.2px, transparent 1.4px),
+    radial-gradient(circle at 18% 55%, var(--color-lava-500) 1.2px, transparent 1.4px);
+  background-size: 48px 18px;
+  opacity: 0.28;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-soft,
+  .animate-wiggle,
+  .animate-pulse-glow,
+  .animate-fade-up,
+  .animate-ken-burns,
+  .img-shine::after {
+    animation: none;
+  }
+}
