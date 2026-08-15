@@ -50,10 +50,10 @@ export default async function ProductosPage({ searchParams }: Props) {
               key={c.slug}
               href={`/productos?categoria=${c.slug}`}
               aria-current={activa ? "page" : undefined}
-              className={`flex shrink-0 items-center gap-2 rounded-full border-2 py-1 pl-1 pr-4 font-display text-sm font-bold transition ${
+              className={`flex shrink-0 items-center gap-2 rounded-full py-1 pl-1 pr-4 font-display text-sm font-bold transition ${
                 activa
-                  ? "border-jungle-700 bg-jungle-600 text-white"
-                  : "border-stone-warm-300 bg-white text-jungle-800 hover:border-jungle-500"
+                  ? "bg-jungle-600 text-white"
+                  : "bg-white text-jungle-800 ring-1 ring-stone-warm-200 hover:ring-jungle-400"
               }`}
             >
               {c.image ? (

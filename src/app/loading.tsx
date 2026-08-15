@@ -1,19 +1,16 @@
-import Image from "next/image";
-
 export default function Loading() {
   return (
-    <div className="grid min-h-[50vh] place-items-center">
-      <div className="text-center">
-        <span className="relative mx-auto block h-24 w-24">
-          <Image
-            src="/brand/mascot-rex.webp"
-            alt=""
-            fill
-            sizes="96px"
-            className="animate-float-soft object-contain mix-blend-multiply"
-          />
-        </span>
-        <p className="mt-3 font-display font-bold text-jungle-800">Cargando la manada…</p>
+    <div className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6">
+      <div className="h-[28rem] animate-pulse rounded-3xl bg-jungle-800/20" />
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <div key={i} className="h-36 animate-pulse rounded-3xl bg-white/80" />
+        ))}
+      </div>
+      <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <div key={i} className="h-80 animate-pulse rounded-3xl bg-white/80" />
+        ))}
       </div>
     </div>
   );

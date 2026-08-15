@@ -65,7 +65,7 @@ export default function AddToCartPanel({ product }: { product: ProductDTO }) {
           type="button"
           disabled={agotado || size === null}
           onClick={() => size !== null && add(product, size, qty)}
-          className="btn-3d btn-3d-press flex flex-1 items-center justify-center gap-2 rounded-full bg-jungle-600 px-6 py-3 font-display text-base font-bold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-45"
+          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-jungle-600 px-6 py-3 font-display text-base font-bold text-white transition hover:bg-jungle-500 disabled:cursor-not-allowed disabled:opacity-45"
         >
           <span aria-hidden>🛒</span>
           {agotado ? "SIN STOCK" : `AGREGAR · ${formatBs(product.price * qty)}`}

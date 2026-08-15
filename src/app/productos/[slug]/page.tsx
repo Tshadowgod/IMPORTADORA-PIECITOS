@@ -58,7 +58,7 @@ export default async function ProductoPage({ params }: Props) {
 
       <div className="grid gap-8 lg:grid-cols-2">
         <div
-          className={`img-shine relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl border-2 border-stone-warm-300 bg-linear-to-b shadow-[0_12px_30px_rgba(90,74,48,0.18)] ${productTint(product.color)}`}
+          className={`img-shine relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl bg-linear-to-b shadow-[0_16px_40px_rgba(90,74,48,0.12)] ${productTint(product.color)}`}
         >
           {product.isNew && (
             <span className="absolute left-4 top-4 z-10 rounded-full bg-jungle-600 px-3 py-1 font-display text-xs font-bold text-white">
@@ -108,7 +108,7 @@ export default async function ProductoPage({ params }: Props) {
 
           <AddToCartPanel product={product} />
 
-          <ul className="mt-6 grid gap-2 rounded-2xl border-2 border-jungle-600/20 bg-white/70 p-4 text-sm font-semibold text-jungle-900/80 sm:grid-cols-2">
+          <ul className="mt-6 grid gap-2 rounded-2xl bg-white p-4 text-sm font-semibold text-jungle-900/80 ring-1 ring-stone-warm-200/80 sm:grid-cols-2">
             <li className="flex items-center gap-2">
               <span aria-hidden>🐾</span> Envío gratis desde Bs. 150
             </li>

@@ -11,28 +11,17 @@ const ACCENT_TEXT: Record<Accent, string> = {
   orange: "text-lava-500",
 };
 
-const ACCENT_RING: Record<Accent, string> = {
-  green: "ring-jungle-400/50",
-  blue: "ring-[#7ec8e3]/70",
-  pink: "ring-berry-400/50",
-  yellow: "ring-sun-400/70",
-  purple: "ring-grape-400/50",
-  orange: "ring-lava-400/50",
-};
-
 export default function CategoryTiles({ categories }: { categories: CategoryDTO[] }) {
   const items = [...categories].sort((a, b) => a.sortOrder - b.sortOrder);
 
   return (
-    <section
-      aria-label="Explorar por categoría"
-      className="border-b-2 border-stone-warm-300/60 bg-cream-200/70 py-10"
-    >
-      <div className="mx-auto mb-5 max-w-[1400px] px-4 sm:px-6">
-        <h2 className="font-display text-lg font-bold text-jungle-800 sm:text-xl">
+    <section aria-label="Explorar por categoría" className="py-12">
+      <div className="mx-auto mb-6 max-w-[1400px] px-4 sm:px-6">
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-lava-500">Explora</p>
+        <h2 className="font-display text-2xl font-bold text-jungle-800 sm:text-3xl">
           Elige tu manada
         </h2>
-        <p className="text-sm font-semibold text-jungle-900/65">
+        <p className="mt-1 text-sm font-semibold text-jungle-900/60">
           Modelos para cada explorador, de 0 a 12 años.
         </p>
       </div>
@@ -41,14 +30,9 @@ export default function CategoryTiles({ categories }: { categories: CategoryDTO[
           <li key={cat.slug}>
             <Link
               href={`/productos?categoria=${cat.slug}`}
-              className="stone-tile group flex h-full flex-col items-center gap-2 px-3 py-4 text-center transition hover:-translate-y-1 hover:brightness-105"
-              style={{ borderRadius: "46% 46% 20% 20% / 26% 26% 12% 12%" }}
+              className="group flex h-full flex-col items-center gap-2 rounded-3xl bg-white px-3 py-5 text-center shadow-[0_8px_24px_rgba(90,74,48,0.08)] ring-1 ring-stone-warm-200/70 transition hover:-translate-y-1 hover:shadow-[0_14px_28px_rgba(90,74,48,0.14)] hover:ring-jungle-400/40"
             >
-              <span
-                className={`relative mt-1 grid h-16 w-16 place-items-center overflow-hidden rounded-full bg-cream-50 ring-4 sm:h-[4.75rem] sm:w-[4.75rem] ${
-                  ACCENT_RING[cat.accent] ?? ACCENT_RING.green
-                }`}
-              >
+              <span className="relative h-[4.5rem] w-[4.5rem] overflow-hidden rounded-2xl bg-cream-100 sm:h-20 sm:w-20">
                 {cat.image ? (
                   <Image
                     src={cat.image}
@@ -58,7 +42,7 @@ export default function CategoryTiles({ categories }: { categories: CategoryDTO[
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 ) : (
-                  <span aria-hidden className="text-4xl sm:text-5xl">
+                  <span aria-hidden className="grid h-full w-full place-items-center text-4xl">
                     {cat.icon}
                   </span>
                 )}
@@ -71,11 +55,7 @@ export default function CategoryTiles({ categories }: { categories: CategoryDTO[
                 {cat.name}
               </span>
               {cat.subtitle && (
-                <span
-                  className={`font-display text-[0.7rem] font-semibold leading-none ${
-                    ACCENT_TEXT[cat.accent] ?? ACCENT_TEXT.green
-                  }`}
-                >
+                <span className="text-[0.7rem] font-semibold text-jungle-900/50">
                   {cat.subtitle}
                 </span>
               )}

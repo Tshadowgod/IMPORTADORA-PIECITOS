@@ -28,8 +28,8 @@ export default function Logo({ compact = false }: { compact?: boolean }) {
         // y la cabecera salta.
         priority
         sizes={compact ? "140px" : "200px"}
-        className={`w-auto transition-transform group-hover:scale-105 ${
-          compact ? "h-14" : "h-20 sm:h-28"
+        className={`w-auto transition-transform group-hover:scale-[1.03] ${
+          compact ? "h-11" : "h-[3.35rem] sm:h-16"
         }`}
       />
     </Link>

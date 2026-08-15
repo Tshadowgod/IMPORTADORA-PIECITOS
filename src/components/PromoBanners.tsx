@@ -28,8 +28,8 @@ export default function PromoBanners() {
   }
 
   return (
-    <section className="mx-auto grid max-w-[1400px] gap-5 px-4 py-8 sm:px-6 lg:grid-cols-2">
-      <article className="relative flex min-h-[220px] items-end overflow-hidden rounded-2xl border-2 border-jungle-800/40 sm:min-h-[260px]">
+    <section className="mx-auto grid max-w-[1400px] gap-4 px-4 py-8 sm:px-6 lg:grid-cols-2">
+      <article className="relative flex min-h-[240px] items-end overflow-hidden rounded-3xl sm:min-h-[280px]">
         <Image
           src="/brand/combo-dinos.webp"
           alt=""
@@ -47,14 +47,14 @@ export default function PromoBanners() {
           <p className="mt-1 text-sm font-bold text-white/95">Lleva más, paga menos</p>
           <Link
             href="/productos?categoria=colecciones"
-            className="btn-3d btn-3d-press mt-4 inline-block rounded-lg bg-white px-4 py-2 font-display text-sm font-bold text-jungle-800 transition hover:brightness-105"
+            className="mt-4 inline-block rounded-full bg-white px-5 py-2.5 font-display text-sm font-bold text-jungle-800 transition hover:bg-cream-50"
           >
             VER COMBOS
           </Link>
         </div>
       </article>
 
-      <article className="relative overflow-hidden rounded-2xl border-2 border-jungle-800/40 sm:min-h-[260px]">
+      <article className="relative overflow-hidden rounded-3xl sm:min-h-[280px]">
         <Image
           src="/brand/manada-social.webp"
           alt=""
@@ -92,7 +92,7 @@ export default function PromoBanners() {
               <button
                 type="submit"
                 disabled={estado === "enviando"}
-                className="btn-3d btn-3d-press shrink-0 rounded-lg bg-sun-400 px-4 py-2 font-display text-sm font-bold text-jungle-900 transition hover:brightness-105 disabled:opacity-60"
+                className="shrink-0 rounded-full bg-sun-400 px-4 py-2 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300 disabled:opacity-60"
               >
                 {estado === "enviando" ? "…" : "¡SÍGUENOS!"}
               </button>

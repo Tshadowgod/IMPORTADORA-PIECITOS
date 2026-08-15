@@ -27,11 +27,11 @@ export default function CartDrawer() {
         aria-modal="true"
         aria-label="Carrito de compras"
         aria-hidden={!isOpen}
-        className={`fixed right-0 top-0 z-50 flex h-dvh w-full max-w-md flex-col border-l-4 border-jungle-700 bg-cream-50 shadow-2xl transition-transform duration-300 ${
+        className={`fixed right-0 top-0 z-50 flex h-dvh w-full max-w-md flex-col bg-cream-50 shadow-2xl transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <header className="jungle-bar flex items-center justify-between px-4 py-3">
+        <header className="flex items-center justify-between bg-jungle-700 px-4 py-3">
           <h2 className="font-display text-lg font-bold text-white">Tu carrito</h2>
           <button
             type="button"
@@ -63,7 +63,7 @@ export default function CartDrawer() {
             <Link
               href="/productos"
               onClick={closeCart}
-              className="btn-3d btn-3d-press mt-2 rounded-full bg-jungle-600 px-6 py-2.5 font-display font-bold text-white"
+              className="mt-2 inline-block rounded-full bg-jungle-600 px-6 py-2.5 text-center font-display font-bold text-white"
             >
               VER CATÁLOGO
             </Link>
@@ -158,7 +158,7 @@ export default function CartDrawer() {
               <Link
                 href="/carrito"
                 onClick={closeCart}
-                className="btn-3d btn-3d-press mt-3 block rounded-full bg-jungle-600 py-3 text-center font-display text-base font-bold text-white transition hover:brightness-110"
+                className="mt-3 block rounded-full bg-jungle-600 py-3 text-center font-display text-base font-bold text-white transition hover:bg-jungle-500"
               >
                 FINALIZAR COMPRA
               </Link>

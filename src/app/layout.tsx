@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { getCategories } from "@/lib/data";
 
 const fredoka = Fredoka({
@@ -72,6 +73,7 @@ export default async function RootLayout({
           <main id="contenido">{children}</main>
           <Footer />
           <CartDrawer />
+          <WhatsAppButton />
         </CartProvider>
       </body>
     </html>

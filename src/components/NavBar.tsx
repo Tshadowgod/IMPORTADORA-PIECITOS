@@ -43,7 +43,7 @@ function NavLinks({ categories }: { categories: CategoryDTO[] }) {
   };
 
   return (
-    <ul className="no-scrollbar mx-auto flex max-w-[1400px] items-stretch gap-1 overflow-x-auto px-2 sm:gap-2 sm:px-4">
+    <ul className="no-scrollbar mx-auto flex max-w-[1400px] items-center gap-0.5 overflow-x-auto px-2 py-1.5 sm:gap-1 sm:px-4">
       {items.map((item) => {
         const active = isActive(item);
         return (
@@ -51,9 +51,9 @@ function NavLinks({ categories }: { categories: CategoryDTO[] }) {
             <Link
               href={item.href}
               aria-current={active ? "page" : undefined}
-              className={`flex items-center gap-2 rounded-t-xl px-3 py-2.5 font-display text-sm font-bold tracking-wide transition sm:px-5 sm:py-3 sm:text-base ${
+              className={`flex items-center gap-1.5 rounded-full px-3 py-2 font-display text-[0.8rem] font-bold tracking-wide transition sm:px-4 sm:text-sm ${
                 active
-                  ? "bg-sun-400 text-jungle-900 shadow-[inset_0_2px_0_rgba(255,255,255,0.5)]"
+                  ? "bg-sun-400 text-jungle-900 shadow-sm"
                   : "text-white/95 hover:bg-white/15"
               }`}
             >
@@ -73,7 +73,7 @@ export default function NavBar({ categories }: { categories: CategoryDTO[] }) {
   return (
     <nav
       aria-label="Categorías principales"
-      className="jungle-bar sticky top-0 z-30 border-y-2 border-jungle-800/40"
+      className="jungle-bar sticky top-0 z-30 shadow-[0_4px_16px_rgba(30,55,20,0.18)]"
     >
       <Suspense fallback={<div className="h-12" />}>
         <NavLinks categories={categories} />

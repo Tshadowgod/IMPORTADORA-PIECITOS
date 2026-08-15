@@ -6,10 +6,6 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useCart } from "./CartProvider";
 
-/* ------------------------------------------------------------------ */
-/*  Buscador                                                           */
-/* ------------------------------------------------------------------ */
-
 function SearchBox() {
   const router = useRouter();
   const params = useSearchParams();
@@ -23,9 +19,9 @@ function SearchBox() {
         const q = query.trim();
         router.push(q ? `/productos?q=${encodeURIComponent(q)}` : "/productos");
       }}
-      className="flex w-full max-w-xl items-stretch overflow-hidden rounded-xl border-2 border-jungle-600/25 bg-white shadow-[0_3px_0_rgba(0,0,0,0.12)]"
+      className="flex w-full max-w-xl items-stretch overflow-hidden rounded-full border border-jungle-800/10 bg-white shadow-[0_2px_12px_rgba(30,55,20,0.08)]"
     >
-      <span aria-hidden className="grid place-items-center pl-3 text-jungle-600">
+      <span aria-hidden className="grid place-items-center pl-4 text-jungle-600">
         <SearchIcon />
       </span>
       <input
@@ -34,12 +30,12 @@ function SearchBox() {
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Buscar tenis, tallas, modelos…"
         aria-label="Buscar productos"
-        className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-sm text-jungle-900 outline-none placeholder:text-jungle-900/45 sm:text-base"
+        className="min-w-0 flex-1 bg-transparent px-3 py-2.5 text-sm text-jungle-900 outline-none placeholder:text-jungle-900/40 sm:text-base"
       />
       <button
         type="submit"
         aria-label="Buscar"
-        className="jungle-bar grid w-12 shrink-0 place-items-center text-white transition hover:brightness-110 sm:w-14"
+        className="m-1 grid w-10 shrink-0 place-items-center rounded-full bg-jungle-600 text-white transition hover:bg-jungle-500 sm:w-11"
       >
         <SearchIcon />
       </button>
@@ -47,62 +43,42 @@ function SearchBox() {
   );
 }
 
-/* ------------------------------------------------------------------ */
-/*  Cabecera                                                           */
-/* ------------------------------------------------------------------ */
-
 export default function Header() {
   const { count, openCart } = useCart();
 
   return (
-    <header className="relative z-40 border-b-4 border-jungle-700/20 bg-cream-50/95 backdrop-blur">
-      {/* El logo ya trae las huellas de dino, así que la cabecera no lleva
-          más decoración: dos mascotas juntas se estorban. */}
-      <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-3 py-3 sm:gap-5 sm:px-6">
+    <header className="relative z-40 border-b border-jungle-800/8 bg-cream-50/90 backdrop-blur-md">
+      <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-4 py-2.5 sm:gap-5 sm:px-6">
         <Logo />
 
         <div className="order-3 w-full sm:order-none sm:flex-1">
-          <Suspense fallback={<div className="h-12" />}>
+          <Suspense fallback={<div className="h-11" />}>
             <SearchBox />
           </Suspense>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 sm:gap-4">
-          {/* Cartel de madera "MI CUENTA" */}
+        <div className="ml-auto flex items-center gap-2 sm:gap-3">
           <Link
             href="/cuenta"
-            className="btn-3d btn-3d-press hidden flex-col items-center rounded-lg border-2 border-wood-500/60 px-4 py-1.5 text-center leading-tight transition hover:brightness-105 md:flex"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(180deg, #c68c47 0px, #c68c47 6px, #b97f3c 6px, #b97f3c 12px)",
-            }}
+            className="hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-jungle-800 transition hover:bg-white md:flex"
           >
-            <span className="font-display text-sm font-bold tracking-wide text-jungle-900">
-              MI CUENTA
-            </span>
-            <span className="text-[0.7rem] font-semibold text-jungle-900/75">
+            <UserIcon />
+            <span className="leading-tight">
+              <span className="block font-display text-[0.7rem] tracking-wide text-jungle-800/55">
+                CUENTA
+              </span>
               Iniciar sesión
             </span>
           </Link>
 
-          {/* Carrito con forma de piedra */}
           <button
             type="button"
             onClick={openCart}
-            className="btn-3d btn-3d-press relative flex flex-col items-center rounded-2xl border-2 border-stone-warm-500/50 bg-stone-warm-300 px-4 py-1.5 transition hover:brightness-105"
-            style={{ borderRadius: "38% 62% 55% 45% / 45% 40% 60% 55%" }}
+            className="relative grid h-12 w-12 place-items-center rounded-full bg-jungle-600 text-white shadow-[0_4px_14px_rgba(63,119,36,0.35)] transition hover:bg-jungle-500"
             aria-label={`Abrir carrito, ${count} ${count === 1 ? "producto" : "productos"}`}
           >
-            <span className="font-display text-xs font-bold tracking-wide text-jungle-900">
-              CARRITO
-            </span>
-            <span aria-hidden className="text-xl leading-none">
-              🛒
-            </span>
-            <span
-              aria-hidden
-              className="absolute -right-1.5 -top-1.5 grid h-6 w-6 place-items-center rounded-full bg-lava-500 text-xs font-extrabold text-white ring-2 ring-white"
-            >
+            <CartIcon />
+            <span className="absolute -right-0.5 -top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-lava-500 px-1 text-[0.65rem] font-extrabold ring-2 ring-cream-50">
               {count}
             </span>
           </button>
@@ -114,18 +90,29 @@ export default function Header() {
 
 function SearchIcon() {
   return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      aria-hidden
-    >
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden>
       <circle cx="11" cy="11" r="7" />
       <path d="m20 20-3.5-3.5" />
+    </svg>
+  );
+}
+
+function UserIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
+      <circle cx="12" cy="8" r="3.5" />
+      <path d="M5 19c1.2-3 3.6-4.5 7-4.5s5.8 1.5 7 4.5" />
+    </svg>
+  );
+}
+
+function CartIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M6 7h15l-1.5 9h-12z" />
+      <path d="M6 7 5 4H2" />
+      <circle cx="9" cy="20" r="1.3" fill="currentColor" />
+      <circle cx="18" cy="20" r="1.3" fill="currentColor" />
     </svg>
   );
 }
