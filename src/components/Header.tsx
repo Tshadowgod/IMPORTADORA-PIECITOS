@@ -2,7 +2,6 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useCart } from "./CartProvider";
@@ -57,20 +56,9 @@ export default function Header() {
 
   return (
     <header className="relative z-40 border-b-4 border-jungle-700/20 bg-cream-50/95 backdrop-blur">
-      <span
-        aria-hidden
-        className="pointer-events-none absolute -bottom-1 left-0 hidden h-24 w-24 overflow-hidden xl:block"
-      >
-        <Image
-          src="/brand/mascot-rex.webp"
-          alt=""
-          fill
-          sizes="96px"
-          className="object-contain object-left mix-blend-multiply"
-        />
-      </span>
-
-      <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-3 py-3 sm:gap-5 sm:px-6 xl:pl-24">
+      {/* El logo ya trae las huellas de dino, así que la cabecera no lleva
+          más decoración: dos mascotas juntas se estorban. */}
+      <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3 px-3 py-3 sm:gap-5 sm:px-6">
         <Logo />
 
         <div className="order-3 w-full sm:order-none sm:flex-1">
