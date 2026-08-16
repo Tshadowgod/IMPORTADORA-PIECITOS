@@ -7,6 +7,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FloatingCart from "@/components/FloatingCart";
 import { getCategories } from "@/lib/data";
 import { REDES, UBICACION } from "@/lib/tienda";
 
@@ -107,6 +108,7 @@ export default async function RootLayout({
           <main id="contenido">{children}</main>
           <Footer />
           <CartDrawer />
+          <FloatingCart />
           <WhatsAppButton />
         </CartProvider>
       </body>
