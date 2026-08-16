@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import RedesSociales from "./RedesSociales";
+import { COMO_LLEGAR, DIRECCION_CORTA, TELEFONO, UBICACION } from "@/lib/tienda";
 
 const ATENCION = [
   { label: "Preguntas frecuentes", href: "/ayuda/preguntas-frecuentes" },
@@ -9,8 +11,6 @@ const ATENCION = [
 ];
 
 const PAGOS = ["Visa", "Mastercard", "QR", "Banco"];
-
-const TELEFONO = "+591 7XX XXX XX";
 
 export default function Footer() {
   const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "59170000000";
@@ -24,6 +24,12 @@ export default function Footer() {
             Tenis de dinosaurio para pequeños exploradores. Hechos para jugar, correr y dejar
             huella.
           </p>
+          <h2 className="mt-6 font-display text-sm font-bold tracking-wide text-sun-300">
+            Síguenos
+          </h2>
+          <div className="mt-3">
+            <RedesSociales />
+          </div>
         </section>
 
         <section>
@@ -64,7 +70,20 @@ export default function Footer() {
                 WhatsApp {TELEFONO}
               </a>
             </li>
-            <li>Santa Cruz de la Sierra, Bolivia</li>
+            <li>
+              {/* La dirección enlaza al mapa: en el celular abre Google Maps
+                  directo con la ruta hasta la tienda. */}
+              <a
+                href={COMO_LLEGAR}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-sun-300"
+              >
+                <span className="block">{UBICACION.nombre}</span>
+                <span className="block text-white/75">{DIRECCION_CORTA}</span>
+                <span className="mt-1 inline-block text-sun-300">Cómo llegar →</span>
+              </a>
+            </li>
           </ul>
         </section>
 

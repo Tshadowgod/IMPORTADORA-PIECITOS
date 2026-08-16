@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import RedesSociales from "@/components/RedesSociales";
+import { COMO_LLEGAR, DIRECCION_CORTA, TELEFONO, UBICACION } from "@/lib/tienda";
 
 export const metadata: Metadata = {
   title: "Contacto",
-  description: "Escríbenos por WhatsApp o llámanos. Importadora Piecitos, Bolivia.",
+  description: `Escríbenos por WhatsApp, síguenos en redes o visítanos en ${DIRECCION_CORTA}.`,
 };
+
+/** Mapa incrustado sin API key: el parámetro `output=embed` es público. */
+const MAPA_EMBED = `https://www.google.com/maps?q=${UBICACION.lat},${UBICACION.lng}&hl=es&z=17&output=embed`;
 
 const HORARIOS = [
   ["Lunes a viernes", "09:00 – 19:00"],
@@ -54,7 +59,7 @@ export default function ContactoPage() {
         </a>
 
         <a
-          href="tel:+5917000000"
+          href={`tel:${TELEFONO.replace(/\s/g, "")}`}
           className="btn-3d btn-3d-press flex items-center gap-3 rounded-2xl border-2 border-stone-warm-300 bg-white p-5 transition hover:brightness-105"
         >
           <span aria-hidden className="text-3xl">
@@ -64,10 +69,44 @@ export default function ContactoPage() {
             <span className="block font-display text-lg font-bold text-jungle-800">
               Llámanos
             </span>
-            <span className="text-sm font-semibold text-jungle-900/70">+591 7XX XXX XX</span>
+            <span className="text-sm font-semibold text-jungle-900/70">{TELEFONO}</span>
           </span>
         </a>
       </div>
+
+      <section className="mt-8">
+        <h2 className="font-display text-lg font-bold text-jungle-800">Síguenos en redes</h2>
+        <p className="mt-1 text-sm font-semibold text-jungle-900/70">
+          Ahí publicamos los modelos nuevos y las ofertas antes que en ningún lado.
+        </p>
+        <div className="mt-4">
+          <RedesSociales variante="tarjeta" />
+        </div>
+      </section>
+
+      <section className="mt-8 overflow-hidden rounded-2xl border-2 border-stone-warm-300 bg-white">
+        <div className="p-5">
+          <h2 className="font-display text-lg font-bold text-jungle-800">Visítanos</h2>
+          <p className="mt-1 font-bold text-jungle-900">{UBICACION.nombre}</p>
+          <p className="text-sm font-semibold text-jungle-900/70">{DIRECCION_CORTA}</p>
+          <a
+            href={COMO_LLEGAR}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-3d btn-3d-press mt-4 inline-flex items-center gap-2 rounded-full bg-jungle-600 px-5 py-2.5 font-display font-bold text-white transition hover:brightness-110"
+          >
+            <span aria-hidden>📍</span> Cómo llegar
+          </a>
+        </div>
+        <iframe
+          src={MAPA_EMBED}
+          title={`Mapa de ${UBICACION.nombre}`}
+          // `lazy` para que el mapa no compita con el resto de la página.
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="block h-72 w-full border-0 border-t-2 border-stone-warm-300"
+        />
+      </section>
 
       <section className="mt-8 rounded-2xl border-2 border-stone-warm-300 bg-white p-5">
         <h2 className="font-display text-lg font-bold text-jungle-800">Horarios de atención</h2>

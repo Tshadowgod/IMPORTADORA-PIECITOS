@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CartDrawer from "@/components/CartDrawer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getCategories } from "@/lib/data";
+import { REDES, UBICACION } from "@/lib/tienda";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -47,6 +48,35 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Ficha del negocio para buscadores: enlaza la tienda con sus redes (`sameAs`)
+ * y con el punto exacto del mapa, que es lo que alimenta el panel lateral de
+ * Google y las búsquedas del tipo "zapatos para niños cerca de mí".
+ */
+const FICHA_NEGOCIO = {
+  "@context": "https://schema.org",
+  "@type": "ShoeStore",
+  name: "Importadora Piecitos",
+  alternateName: UBICACION.nombre,
+  description: "Calzados infantiles importados en Santa Cruz de la Sierra, Bolivia.",
+  image: "/brand/logo.webp",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: UBICACION.calle,
+    addressLocality: UBICACION.ciudad,
+    addressRegion: "Santa Cruz",
+    addressCountry: "BO",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: UBICACION.lat,
+    longitude: UBICACION.lng,
+  },
+  hasMap: UBICACION.mapa,
+  currenciesAccepted: "BOB",
+  sameAs: REDES.map((r) => r.href),
+};
+
 export const viewport: Viewport = {
   themeColor: "#3f7724",
   width: "device-width",
@@ -61,6 +91,10 @@ export default async function RootLayout({
   return (
     <html lang="es-BO" className={`${fredoka.variable} ${nunito.variable}`}>
       <body className="min-h-dvh antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(FICHA_NEGOCIO) }}
+        />
         <CartProvider>
           <a
             href="#contenido"
