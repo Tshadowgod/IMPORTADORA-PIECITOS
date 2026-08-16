@@ -28,15 +28,53 @@ const ICONOS: Record<RedId, () => React.ReactElement> = {
 };
 
 /**
+ * Color de cada red, para cuando el icono se muestra a todo color y no en el
+ * verde de la marca. Instagram no tiene un color plano: lleva su degradado.
+ */
+const COLORES: Record<RedId, string> = {
+  instagram: "bg-[linear-gradient(45deg,#f9ce34,#ee2a7b_45%,#6228d7)]",
+  tiktok: "bg-[#010101]",
+  facebook: "bg-[#1877f2]",
+};
+
+/**
  * `variante`:
  *  - "footer": círculos claros sobre el verde del pie.
  *  - "tarjeta": botones anchos con el nombre de usuario, para /contacto.
+ *  - "banda": fila de píldoras a color, para la franja del inicio.
  */
 export default function RedesSociales({
   variante = "footer",
 }: {
-  variante?: "footer" | "tarjeta";
+  variante?: "footer" | "tarjeta" | "banda";
 }) {
+  if (variante === "banda") {
+    return (
+      <ul className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+        {REDES.map((red) => {
+          const Icono = ICONOS[red.id];
+          return (
+            <li key={red.id}>
+              <a
+                href={red.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 rounded-full bg-white py-2 pl-2 pr-4 shadow-[0_8px_24px_rgba(90,74,48,0.08)] ring-1 ring-stone-warm-200/70 transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(90,74,48,0.14)] hover:ring-jungle-400/40"
+              >
+                <span
+                  className={`grid h-9 w-9 shrink-0 place-items-center rounded-full text-white ${COLORES[red.id]}`}
+                >
+                  <Icono />
+                </span>
+                <span className="text-sm font-bold text-jungle-800">{red.usuario}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   if (variante === "tarjeta") {
     return (
       <ul className="grid gap-3 sm:grid-cols-3">

@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Hero from "@/components/Hero";
 import CategoryTiles from "@/components/CategoryTiles";
+import RedesBanda from "@/components/RedesBanda";
 import BenefitsBar from "@/components/BenefitsBar";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import PromoBanners from "@/components/PromoBanners";
@@ -12,6 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <RedesBanda />
       <Suspense fallback={<CategorySkeleton />}>
         <HomeCategories />
       </Suspense>
