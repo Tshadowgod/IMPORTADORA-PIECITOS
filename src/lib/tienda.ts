@@ -50,6 +50,15 @@ export const DIRECCION_CORTA = `${UBICACION.calle}, ${UBICACION.zona} — ${UBIC
  */
 export const COMO_LLEGAR = `https://www.google.com/maps/dir/?api=1&destination=${UBICACION.lat},${UBICACION.lng}`;
 
+/**
+ * Mapa incrustable sin API key: el parámetro `output=embed` es público.
+ *
+ * Va por coordenadas y no por el nombre del negocio: buscar por nombre
+ * depende de que Google acierte con el local y podría centrar el mapa en
+ * otro lado; las coordenadas salen del propio enlace que comparte la tienda.
+ */
+export const MAPA_EMBED = `https://www.google.com/maps?q=${UBICACION.lat},${UBICACION.lng}&hl=es&z=17&output=embed`;
+
 /** Teléfono de la tienda, como se muestra en pantalla. */
 export const TELEFONO = "+591 69260082";
 

@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import RedesSociales from "@/components/RedesSociales";
-import { COMO_LLEGAR, DIRECCION_CORTA, linkWhatsApp, TELEFONO, UBICACION } from "@/lib/tienda";
+import {
+  COMO_LLEGAR,
+  DIRECCION_CORTA,
+  linkWhatsApp,
+  MAPA_EMBED,
+  TELEFONO,
+  UBICACION,
+} from "@/lib/tienda";
 
 export const metadata: Metadata = {
   title: "Contacto",
   description: `Escríbenos por WhatsApp, síguenos en redes o visítanos en ${DIRECCION_CORTA}.`,
 };
-
-/** Mapa incrustado sin API key: el parámetro `output=embed` es público. */
-const MAPA_EMBED = `https://www.google.com/maps?q=${UBICACION.lat},${UBICACION.lng}&hl=es&z=17&output=embed`;
 
 const HORARIOS = [
   ["Lunes a viernes", "09:00 – 19:00"],

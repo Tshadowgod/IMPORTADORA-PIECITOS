@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import RedesSociales from "./RedesSociales";
 
 type Estado = "idle" | "enviando" | "ok" | "error";
 
@@ -73,13 +74,13 @@ export default function PromoBanners() {
               Novedades, sorteos y descuentos exclusivos.
             </p>
 
+            {/* Antes había tres emoji apuntando a instagram.com, facebook.com
+                y tiktok.com a secas: no llevaban a la tienda. */}
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <SocialLink href="https://instagram.com" label="Instagram" icon="📷" />
-              <SocialLink href="https://facebook.com" label="Facebook" icon="👍" />
-              <SocialLink href="https://tiktok.com" label="TikTok" icon="🎵" />
+              <RedesSociales />
             </div>
 
-            <form onSubmit={suscribir} className="mt-3 flex max-w-sm gap-2">
+            <form onSubmit={suscribir} className="mt-3 flex max-w-sm flex-col gap-2 sm:flex-row">
               <input
                 type="email"
                 required
@@ -92,7 +93,7 @@ export default function PromoBanners() {
               <button
                 type="submit"
                 disabled={estado === "enviando"}
-                className="shrink-0 rounded-full bg-sun-400 px-4 py-2 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300 disabled:opacity-60"
+                className="shrink-0 rounded-full bg-sun-400 px-4 py-2.5 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300 disabled:opacity-60"
               >
                 {estado === "enviando" ? "…" : "¡SÍGUENOS!"}
               </button>
@@ -106,19 +107,5 @@ export default function PromoBanners() {
         </div>
       </article>
     </section>
-  );
-}
-
-function SocialLink({ href, label, icon }: { href: string; label: string; icon: string }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label}
-      className="grid h-9 w-9 place-items-center rounded-lg bg-white/90 text-lg shadow-sm transition hover:scale-110"
-    >
-      <span aria-hidden>{icon}</span>
-    </a>
   );
 }

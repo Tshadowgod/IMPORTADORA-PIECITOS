@@ -6,9 +6,13 @@ import { useCart } from "./CartProvider";
  * Carrito flotante, fijo justo encima del botón de WhatsApp.
  *
  * La cabecera se pierde al bajar por el catálogo, así que el carrito queda
- * siempre a mano en la esquina. Las medidas están atadas a las del botón de
- * WhatsApp (`bottom-5`, `h-14`): 1.25rem + 3.5rem + 0.75rem de aire = 5.5rem.
- * Si cambia uno, hay que mover el otro.
+ * siempre a mano en la esquina. La posición está atada a la del botón de
+ * WhatsApp, con 0.75rem de aire entre los dos:
+ *
+ *   celular:    1rem    + 3rem   + 0.75rem = 4.75rem
+ *   escritorio: 1.25rem + 3.5rem + 0.75rem = 5.5rem
+ *
+ * Si se mueve o cambia de tamaño uno, hay que rehacer la cuenta del otro.
  */
 
 export default function FloatingCart() {
@@ -19,11 +23,11 @@ export default function FloatingCart() {
       type="button"
       onClick={openCart}
       aria-label={`Abrir carrito, ${count} ${count === 1 ? "producto" : "productos"}`}
-      className="fixed bottom-[5.5rem] right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-jungle-600 text-white shadow-[0_8px_24px_rgba(63,119,36,0.45)] transition hover:scale-105 hover:bg-jungle-500"
+      className="fixed bottom-[4.75rem] right-4 z-40 grid h-12 w-12 place-items-center sm:bottom-[5.5rem] sm:right-5 sm:h-14 sm:w-14 rounded-full bg-jungle-600 text-white shadow-[0_8px_24px_rgba(63,119,36,0.45)] transition hover:scale-105 hover:bg-jungle-500"
     >
       <svg
-        width="26"
-        height="26"
+        width="24"
+        height="24"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"

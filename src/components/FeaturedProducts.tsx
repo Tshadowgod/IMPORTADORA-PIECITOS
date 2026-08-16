@@ -15,7 +15,7 @@ export default function FeaturedProducts({
 
   return (
     <section aria-label={titulo} className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6">
-      <div className="mb-6 flex items-end justify-between gap-4">
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-x-4 gap-y-3">
         <div>
           <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-lava-500">
             La manada
@@ -26,7 +26,7 @@ export default function FeaturedProducts({
         </div>
         <Link
           href={verTodosHref}
-          className="flex items-center gap-1.5 rounded-full bg-white px-4 py-2 font-display text-sm font-bold text-jungle-700 ring-1 ring-stone-warm-200 transition hover:ring-jungle-400"
+          className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-white px-4 py-2 font-display text-sm font-bold text-jungle-700 ring-1 ring-stone-warm-200 transition hover:ring-jungle-400"
         >
           Ver todos <span aria-hidden>→</span>
         </Link>

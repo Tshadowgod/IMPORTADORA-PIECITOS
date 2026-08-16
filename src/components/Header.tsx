@@ -78,9 +78,12 @@ export default function Header() {
             aria-label={`Abrir carrito, ${count} ${count === 1 ? "producto" : "productos"}`}
           >
             <CartIcon />
-            <span className="absolute -right-0.5 -top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-lava-500 px-1 text-[0.65rem] font-extrabold ring-2 ring-cream-50">
-              {count}
-            </span>
+            {/* Un globo rojo con un "0" es ruido: solo aparece si hay algo. */}
+            {count > 0 && (
+              <span className="absolute -right-0.5 -top-0.5 grid h-5 min-w-5 place-items-center rounded-full bg-lava-500 px-1 text-[0.65rem] font-extrabold ring-2 ring-cream-50">
+                {count}
+              </span>
+            )}
           </button>
         </div>
       </div>

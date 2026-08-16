@@ -87,13 +87,13 @@ export default function Hero() {
     >
       <JungleBackdrop className="absolute inset-0 h-full w-full" />
 
-      <div className="relative mx-auto grid max-w-[1400px] gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:grid-cols-2 lg:items-center lg:py-20">
+      <div className="relative mx-auto grid max-w-[1400px] gap-5 px-4 py-9 sm:gap-8 sm:px-8 sm:py-16 lg:grid-cols-2 lg:items-center lg:py-20">
         <div key={index} className="animate-fade-up max-w-xl">
           <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-extrabold tracking-wide text-white ring-1 ring-white/25 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-sun-400" />
             Calzados infantiles · Bolivia
           </p>
-          <h1 className="font-display text-4xl leading-[1.05] text-white sm:text-5xl lg:text-[3.35rem]">
+          <h1 className="font-display text-[2rem] leading-[1.08] text-white sm:text-5xl lg:text-[3.35rem]">
             {slide.titulo.map((linea, i) => (
               <span
                 key={linea}
@@ -105,21 +105,21 @@ export default function Hero() {
             ))}
           </h1>
 
-          <p className="mt-4 max-w-md text-base font-semibold text-white/90 sm:text-lg">
+          <p className="mt-3 max-w-md text-sm font-semibold text-white/90 sm:mt-4 sm:text-lg">
             {slide.subtitulo}
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-center gap-3 sm:mt-7">
             <Link
               href={slide.cta.href}
-              className="inline-flex items-center gap-2 rounded-full bg-sun-400 px-7 py-3 font-display text-base font-bold text-jungle-900 shadow-[0_8px_20px_rgba(240,193,28,0.35)] transition hover:bg-sun-300"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-sun-400 px-7 py-3 font-display text-base font-bold text-jungle-900 shadow-[0_8px_20px_rgba(240,193,28,0.35)] transition hover:bg-sun-300 sm:flex-none"
             >
               {slide.cta.label}
               <span aria-hidden>→</span>
             </Link>
             <Link
               href="/productos?categoria=ofertas"
-              className="inline-flex items-center rounded-full bg-white/15 px-5 py-3 font-display text-sm font-bold text-white ring-1 ring-white/30 backdrop-blur-sm transition hover:bg-white/25"
+              className="inline-flex flex-1 items-center justify-center rounded-full bg-white/15 px-5 py-3 font-display text-sm font-bold text-white ring-1 ring-white/30 backdrop-blur-sm transition hover:bg-white/25 sm:flex-none"
             >
               Ver ofertas
             </Link>
@@ -127,15 +127,15 @@ export default function Hero() {
         </div>
 
         <div key={`img-${index}`} className="animate-fade-up relative flex items-center justify-center">
-          <div className="absolute h-52 w-52 rounded-full bg-cream-50/80 blur-0 sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
-          <div className="absolute h-52 w-52 rounded-full bg-white/50 shadow-[0_20px_50px_rgba(0,0,0,0.25)] sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
-          <div className="animate-float-soft relative h-56 w-56 sm:h-72 sm:w-72 lg:h-[22rem] lg:w-[22rem]">
+          <div className="absolute h-44 w-44 rounded-full bg-cream-50/80 blur-0 sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
+          <div className="absolute h-44 w-44 rounded-full bg-white/50 shadow-[0_20px_50px_rgba(0,0,0,0.25)] sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
+          <div className="animate-float-soft relative h-48 w-48 sm:h-72 sm:w-72 lg:h-[22rem] lg:w-[22rem]">
             <Image
               src={slide.image}
               alt={slide.imageAlt}
               fill
               priority={index === 0}
-              sizes="(max-width: 640px) 224px, (max-width: 1024px) 288px, 352px"
+              sizes="(max-width: 640px) 192px, (max-width: 1024px) 288px, 352px"
               className="object-contain drop-shadow-[0_24px_28px_rgba(30,55,20,0.35)]"
             />
           </div>
@@ -145,7 +145,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center gap-3 pb-6">
+      <div className="relative flex items-center justify-center gap-3 pb-5 sm:pb-6">
         <button
           type="button"
           onClick={() => go(index - 1)}

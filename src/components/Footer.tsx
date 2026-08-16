@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import RedesSociales from "./RedesSociales";
-import { COMO_LLEGAR, DIRECCION_CORTA, linkWhatsApp, TELEFONO, UBICACION } from "@/lib/tienda";
+import {
+  COMO_LLEGAR,
+  DIRECCION_CORTA,
+  linkWhatsApp,
+  MAPA_EMBED,
+  TELEFONO,
+  UBICACION,
+} from "@/lib/tienda";
 
 const ATENCION = [
   { label: "Preguntas frecuentes", href: "/ayuda/preguntas-frecuentes" },
@@ -69,20 +76,30 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              {/* La dirección enlaza al mapa: en el celular abre Google Maps
-                  directo con la ruta hasta la tienda. */}
-              <a
-                href={COMO_LLEGAR}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-sun-300"
-              >
-                <span className="block">{UBICACION.nombre}</span>
-                <span className="block text-white/75">{DIRECCION_CORTA}</span>
-                <span className="mt-1 inline-block text-sun-300">Cómo llegar →</span>
-              </a>
+              <span className="block">{UBICACION.nombre}</span>
+              <span className="block text-white/75">{DIRECCION_CORTA}</span>
             </li>
           </ul>
+
+          {/* El mapa se carga en diferido: está al final de cada página y no
+              tiene por qué competir con el catálogo. */}
+          <div className="mt-4 overflow-hidden rounded-2xl ring-2 ring-white/20">
+            <iframe
+              src={MAPA_EMBED}
+              title={`Mapa de ${UBICACION.nombre}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="block h-40 w-full border-0"
+            />
+            <a
+              href={COMO_LLEGAR}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-sun-400 py-3 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300"
+            >
+              <span aria-hidden>📍</span> CÓMO LLEGAR
+            </a>
+          </div>
         </section>
 
         <section>
