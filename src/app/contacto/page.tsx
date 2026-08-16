@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import RedesSociales from "@/components/RedesSociales";
-import { COMO_LLEGAR, DIRECCION_CORTA, TELEFONO, UBICACION } from "@/lib/tienda";
+import { COMO_LLEGAR, DIRECCION_CORTA, linkWhatsApp, TELEFONO, UBICACION } from "@/lib/tienda";
 
 export const metadata: Metadata = {
   title: "Contacto",
@@ -18,8 +18,6 @@ const HORARIOS = [
 ];
 
 export default function ContactoPage() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "59170000000";
-
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <div className="relative mb-8 overflow-hidden rounded-3xl border-2 border-jungle-800/30">
@@ -44,7 +42,7 @@ export default function ContactoPage() {
 
       <div className="grid gap-4 sm:grid-cols-2">
         <a
-          href={`https://wa.me/${whatsapp}`}
+          href={linkWhatsApp("¡Hola! 👋 Quiero información sobre los tenis 🦖")}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-3d btn-3d-press flex items-center gap-3 rounded-2xl border-2 border-jungle-700/40 bg-jungle-600 p-5 text-white transition hover:brightness-110"

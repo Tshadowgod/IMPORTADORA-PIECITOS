@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "@/components/CartProvider";
 import { ENVIO_GRATIS_DESDE, formatBs } from "@/lib/format";
+import { linkWhatsApp } from "@/lib/tienda";
+import { mensajePedidoWhatsApp, type DatosPedido } from "@/lib/pedido-whatsapp";
 
 type Estado = "idle" | "enviando" | "ok" | "error";
 
@@ -12,7 +14,9 @@ export default function CarritoPage() {
   const { lines, updateQuantity, remove, subtotal, shipping, total, clear } = useCart();
   const [estado, setEstado] = useState<Estado>("idle");
   const [mensaje, setMensaje] = useState("");
-  const [codigo, setCodigo] = useState("");
+  // El pedido confirmado se guarda entero porque el carrito se vacía enseguida
+  // y la pantalla de gracias todavía tiene que poder armar el WhatsApp.
+  const [pedido, setPedido] = useState<DatosPedido | null>(null);
 
   async function enviarPedido(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -20,13 +24,16 @@ export default function CarritoPage() {
     setMensaje("");
 
     const form = new FormData(e.currentTarget);
+    const nombre = String(form.get("nombre") ?? "");
+    const telefono = String(form.get("telefono") ?? "");
+    const ciudad = String(form.get("ciudad") ?? "");
+    const notas = String(form.get("notas") ?? "");
+
     const payload = {
-      customerName: String(form.get("nombre") ?? ""),
-      customerPhone: String(form.get("telefono") ?? ""),
-      customerEmail: String(form.get("email") ?? ""),
-      address: String(form.get("direccion") ?? ""),
-      city: String(form.get("ciudad") ?? ""),
-      notes: String(form.get("notas") ?? ""),
+      customerName: nombre,
+      customerPhone: telefono,
+      city: ciudad,
+      notes: notas,
       items: lines.map((l) => ({
         productId: l.productId,
         size: l.size,
@@ -46,7 +53,19 @@ export default function CarritoPage() {
         setMensaje(data.error ?? "No se pudo registrar el pedido.");
         return;
       }
-      setCodigo(data.code);
+      // Los montos y los productos salen de la respuesta del servidor, no del
+      // carrito: son los precios reales con los que quedó guardado el pedido.
+      setPedido({
+        code: data.code,
+        nombre,
+        telefono,
+        ciudad,
+        notas,
+        items: data.items,
+        subtotal: data.subtotal,
+        shipping: data.shipping,
+        total: data.total,
+      });
       setEstado("ok");
       clear();
     } catch {
@@ -55,9 +74,9 @@ export default function CarritoPage() {
     }
   }
 
-  if (estado === "ok") {
+  if (estado === "ok" && pedido) {
     return (
-      <div className="mx-auto max-w-2xl px-4 py-20 text-center">
+      <div className="mx-auto max-w-2xl px-4 py-16 text-center">
         <span className="relative mx-auto block h-32 w-32">
           <Image
             src="/brand/mascot-rex.webp"
@@ -68,18 +87,36 @@ export default function CarritoPage() {
           />
         </span>
         <h1 className="mt-4 font-display text-3xl font-bold text-jungle-800">
-          ¡Pedido recibido!
+          🎉 ¡Pedido recibido!
         </h1>
         <p className="mt-2 text-base font-semibold text-jungle-900/80">
-          Tu código de seguimiento es{" "}
-          <strong className="font-display text-lava-600">{codigo}</strong>. Te
-          contactaremos por WhatsApp para confirmar la entrega.
+          🧾 Tu código de seguimiento es{" "}
+          <strong className="font-display text-lava-600">{pedido.code}</strong>.
         </p>
+
+        <div className="mt-6 rounded-2xl border-2 border-jungle-600/30 bg-jungle-50 p-5 text-left">
+          <p className="font-display text-lg font-bold text-jungle-800">
+            💬 Último paso: mándanos el pedido por WhatsApp
+          </p>
+          <p className="mt-1 text-sm font-semibold text-jungle-900/75">
+            El mensaje ya va escrito con tu código, tus datos y tus tenis. Solo tienes que
+            darle enviar y coordinamos la entrega. 🚚
+          </p>
+          <a
+            href={linkWhatsApp(mensajePedidoWhatsApp(pedido))}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-3d btn-3d-press mt-4 flex items-center justify-center gap-2 rounded-full bg-[#25D366] py-3.5 font-display text-lg font-bold text-white transition hover:brightness-110"
+          >
+            <span aria-hidden>💬</span> ENVIAR POR WHATSAPP
+          </a>
+        </div>
+
         <Link
           href="/productos"
-          className="btn-3d btn-3d-press mt-6 inline-block rounded-full bg-jungle-600 px-7 py-3 font-display font-bold text-white"
+          className="btn-3d btn-3d-press mt-5 inline-block rounded-full bg-jungle-600 px-7 py-3 font-display font-bold text-white"
         >
-          SEGUIR COMPRANDO
+          🦖 SEGUIR COMPRANDO
         </Link>
       </div>
     );
@@ -140,20 +177,17 @@ export default function CarritoPage() {
                 autoComplete="tel"
                 placeholder="7XXXXXXX"
               />
-              <Campo name="email" label="Correo (opcional)" type="email" autoComplete="email" />
-              <Campo name="ciudad" label="Ciudad" autoComplete="address-level2" />
-              <div className="sm:col-span-2">
-                <Campo name="direccion" label="Dirección de entrega" autoComplete="street-address" />
-              </div>
+              <Campo name="ciudad" label="Ciudad" required autoComplete="address-level2" />
               <div className="sm:col-span-2">
                 <label className="block">
                   <span className="mb-1 block text-sm font-bold text-jungle-900">
-                    Notas para el repartidor
+                    Notas (opcional)
                   </span>
                   <textarea
                     name="notas"
                     rows={3}
                     maxLength={500}
+                    placeholder="Zona o referencia de entrega, horario, color preferido…"
                     className="w-full rounded-lg border-2 border-stone-warm-300 bg-cream-50 px-3 py-2 font-semibold text-jungle-900 outline-none focus:border-jungle-500"
                   />
                 </label>

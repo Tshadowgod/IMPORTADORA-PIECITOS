@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import RedesSociales from "./RedesSociales";
-import { COMO_LLEGAR, DIRECCION_CORTA, TELEFONO, UBICACION } from "@/lib/tienda";
+import { COMO_LLEGAR, DIRECCION_CORTA, linkWhatsApp, TELEFONO, UBICACION } from "@/lib/tienda";
 
 const ATENCION = [
   { label: "Preguntas frecuentes", href: "/ayuda/preguntas-frecuentes" },
@@ -13,8 +13,6 @@ const ATENCION = [
 const PAGOS = ["Visa", "Mastercard", "QR", "Banco"];
 
 export default function Footer() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "59170000000";
-
   return (
     <footer className="mt-10 bg-jungle-700 text-white">
       <div className="mx-auto grid max-w-[1400px] gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
@@ -62,7 +60,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href={`https://wa.me/${whatsapp}`}
+                href={linkWhatsApp()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-sun-300"

@@ -50,5 +50,18 @@ export const DIRECCION_CORTA = `${UBICACION.calle}, ${UBICACION.zona} — ${UBIC
  */
 export const COMO_LLEGAR = `https://www.google.com/maps/dir/?api=1&destination=${UBICACION.lat},${UBICACION.lng}`;
 
-/** Teléfono de la tienda. Pendiente: sigue siendo un marcador. */
-export const TELEFONO = "+591 7XX XXX XX";
+/** Teléfono de la tienda, como se muestra en pantalla. */
+export const TELEFONO = "+591 69260082";
+
+/**
+ * El mismo número en el formato que pide wa.me: sin `+`, sin espacios y con
+ * el código de país adelante. La variable de entorno manda, por si algún día
+ * la tienda cambia de línea sin querer volver a desplegar el código.
+ */
+export const WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP || "59169260082";
+
+/** Enlace a WhatsApp, con un mensaje inicial opcional. */
+export function linkWhatsApp(mensaje?: string): string {
+  const base = `https://wa.me/${WHATSAPP}`;
+  return mensaje ? `${base}?text=${encodeURIComponent(mensaje)}` : base;
+}

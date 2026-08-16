@@ -1,9 +1,10 @@
+import { linkWhatsApp } from "@/lib/tienda";
+
 export default function WhatsAppButton() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP ?? "59170000000";
 
   return (
     <a
-      href={`https://wa.me/${whatsapp}`}
+      href={linkWhatsApp("¡Hola! 👋 Quiero información sobre los tenis 🦖")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escribir por WhatsApp"
