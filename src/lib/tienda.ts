@@ -59,6 +59,13 @@ export const COMO_LLEGAR = `https://www.google.com/maps/dir/?api=1&destination=$
  */
 export const MAPA_EMBED = `https://www.google.com/maps?q=${UBICACION.lat},${UBICACION.lng}&hl=es&z=17&output=embed`;
 
+/** Horario de atención, como se muestra en contacto y en las preguntas frecuentes. */
+export const HORARIOS = [
+  ["Lunes a viernes", "09:00 – 19:00"],
+  ["Sábados", "09:00 – 14:00"],
+  ["Domingos", "Cerrado"],
+] as const;
+
 /** Teléfono de la tienda, como se muestra en pantalla. */
 export const TELEFONO = "+591 69260082";
 

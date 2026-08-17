@@ -4,6 +4,7 @@ import RedesSociales from "@/components/RedesSociales";
 import {
   COMO_LLEGAR,
   DIRECCION_CORTA,
+  HORARIOS,
   linkWhatsApp,
   MAPA_EMBED,
   TELEFONO,
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
   title: "Contacto",
   description: `Escríbenos por WhatsApp, síguenos en redes o visítanos en ${DIRECCION_CORTA}.`,
 };
-
-const HORARIOS = [
-  ["Lunes a viernes", "09:00 – 19:00"],
-  ["Sábados", "09:00 – 14:00"],
-  ["Domingos", "Cerrado"],
-];
 
 export default function ContactoPage() {
   return (
