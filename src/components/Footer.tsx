@@ -80,27 +80,35 @@ export default function Footer() {
               <span className="block text-white/75">{DIRECCION_CORTA}</span>
             </li>
           </ul>
-
-          {/* El mapa se carga en diferido: está al final de cada página y no
-              tiene por qué competir con el catálogo. */}
-          <div className="mt-4 overflow-hidden rounded-2xl ring-2 ring-white/20">
-            <iframe
-              src={MAPA_EMBED}
-              title={`Mapa de ${UBICACION.nombre}`}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="block h-40 w-full border-0"
-            />
-            <a
-              href={COMO_LLEGAR}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 bg-sun-400 py-3 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300"
-            >
-              <span aria-hidden>📍</span> CÓMO LLEGAR
-            </a>
-          </div>
         </section>
+
+        {/* El mapa se carga en diferido: está al final de cada página y no
+            tiene por qué competir con el catálogo.
+
+            En escritorio se sale de la columna y cierra el pie como una franja
+            ancha (`order-last` lo manda a la última fila sin mover el orden en
+            el celular, donde va pegado a la dirección). Dentro de la columna
+            quedaba angosto y alto, y dejaba al resto del pie con un hueco de
+            aire debajo. Ahí el botón pasa a ser una píldora sobre el mapa, en la
+            esquina superior: abajo están el logo de Google y la atribución, que
+            no se pueden tapar. */}
+        <div className="-mt-6 overflow-hidden rounded-2xl ring-2 ring-white/20 sm:mt-0 lg:relative lg:order-last lg:col-span-4">
+          <iframe
+            src={MAPA_EMBED}
+            title={`Mapa de ${UBICACION.nombre}`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block h-40 w-full border-0 lg:h-56"
+          />
+          <a
+            href={COMO_LLEGAR}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-sun-400 py-3 font-display text-sm font-bold text-jungle-900 transition hover:bg-sun-300 lg:absolute lg:right-4 lg:top-4 lg:rounded-full lg:px-5 lg:py-2.5 lg:shadow-lg"
+          >
+            <span aria-hidden>📍</span> CÓMO LLEGAR
+          </a>
+        </div>
 
         <section>
           <h2 className="font-display text-sm font-bold tracking-wide text-sun-300">
