@@ -1,4 +1,4 @@
-import { linkWhatsApp, REDES, TELEFONO, type RedId } from "@/lib/tienda";
+import { linkWhatsApp, REDES, type RedId } from "@/lib/tienda";
 
 /**
  * Fila de enlaces a los canales de la tienda.
@@ -13,11 +13,14 @@ type CanalId = RedId | "whatsapp";
  * WhatsApp no está en `REDES` a propósito: esa lista alimenta el `sameAs` del
  * JSON-LD, que espera perfiles de redes sociales, no un enlace de chat. Acá se
  * suma como un canal más cuando quien usa el componente lo pide.
+ *
+ * En la píldora va el nombre de la tienda y no el número: así la fila se lee
+ * pareja con las otras tres y el número igual queda a un toque, en el enlace.
  */
 const CANAL_WHATSAPP = {
   id: "whatsapp" as const,
   nombre: "WhatsApp",
-  usuario: TELEFONO,
+  usuario: "imp_piecitos",
   href: linkWhatsApp("¡Hola! 👋 Quiero información sobre los tenis 🦖"),
 };
 
