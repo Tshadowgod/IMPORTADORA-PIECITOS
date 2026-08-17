@@ -60,8 +60,8 @@ export const demoCategories: CategoryDTO[] = [
   {
     id: 5,
     slug: "colecciones",
-    name: "COLECCIONES",
-    subtitle: "ESPECIALES",
+    name: "COMBOS",
+    subtitle: "DINOS",
     icon: "🪺",
     image: "/categorias/cat-colecciones.webp",
     accent: "purple",
