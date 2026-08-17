@@ -55,7 +55,24 @@ npm install-scripts approve sharp
 
 4. Opcional: `npm run db:studio` abre un explorador visual de la base.
 
-## 3. Desplegar en Vercel
+## 3. Panel de pedidos (`/admin`)
+
+Los pedidos que entran por el checkout se ven en <http://localhost:3000/admin>.
+Se protege con una sola contraseña, en `.env.local`:
+
+```env
+ADMIN_PASSWORD="una-contraseña-propia"   # mínimo 8 caracteres
+```
+
+- Sin esa variable el panel muestra un aviso y no deja entrar.
+- La sesión dura 12 horas y viaja en una cookie `httpOnly` firmada con la
+  propia contraseña, así que **cambiarla cierra todas las sesiones abiertas**.
+- Desde el panel se puede filtrar por estado, escribir al cliente por WhatsApp
+  y mover el pedido entre `pendiente → confirmado → enviado → entregado`
+  (o `cancelado`). Los montos y los productos no se pueden editar: quedan
+  congelados como se guardaron en la compra.
+
+## 4. Desplegar en Vercel
 
 ```bash
 npm i -g vercel
@@ -70,6 +87,7 @@ Environment Variables** agrega:
 | `DATABASE_URL`          | Production, Preview, Development   |
 | `DATABASE_URL_UNPOOLED` | Production, Preview, Development   |
 | `NEXT_PUBLIC_WHATSAPP`  | Production, Preview, Development   |
+| `ADMIN_PASSWORD`        | Production, Preview, Development   |
 
 Si usas la [integración Neon ↔ Vercel](https://vercel.com/integrations/neon),
 esas variables se inyectan solas.
@@ -84,16 +102,21 @@ las rutas de `/api/*` como funciones serverless.
 ```
 src/
 ├── app/
-│   ├── layout.tsx            # Cabecera, nav, footer y provider del carrito
-│   ├── page.tsx              # Home (hero, categorías, beneficios, destacados)
-│   ├── productos/            # Catálogo con filtros + ficha de producto
-│   ├── carrito/              # Checkout
-│   ├── contacto/  cuenta/
+│   ├── layout.tsx            # Solo el documento y las fuentes
+│   ├── not-found.tsx         # 404 (se envuelve a mano en TiendaShell)
+│   ├── (tienda)/             # Todo lo público; el grupo no cambia las URLs
+│   │   ├── layout.tsx        # Cabecera, nav, footer y carrito
+│   │   ├── page.tsx          # Home (hero, categorías, beneficios, destacados)
+│   │   ├── productos/        # Catálogo con filtros + ficha de producto
+│   │   ├── carrito/          # Checkout
+│   │   └── contacto/
+│   ├── admin/                # Panel de pedidos (contraseña, sin chrome de tienda)
 │   └── api/
 │       ├── products/         # GET catálogo y GET producto por slug
 │       ├── categories/       # GET categorías
 │       ├── orders/           # POST pedido (valida y recalcula precios)
-│       └── subscribe/        # POST alta en la lista de novedades
+│       ├── subscribe/        # POST alta en la lista de novedades
+│       └── admin/            # POST/DELETE sesión, PATCH estado de pedido
 ├── components/               # UI (todo el diseño de la maqueta)
 ├── db/
 │   ├── schema.ts             # Tablas Drizzle
@@ -102,6 +125,9 @@ src/
 └── lib/
     ├── data.ts               # Consultas + fallback al catálogo demo
     ├── catalog.ts            # Catálogo de demostración / semilla
+    ├── pedidos.ts            # Consultas de pedidos para el panel
+    ├── pedido-estados.ts     # Estados de un pedido (servidor y cliente)
+    ├── admin-auth.ts         # Contraseña y cookie firmada del panel
     ├── format.ts             # formatBs(), reglas de envío
     └── types.ts              # DTOs compartidos front ↔ back
 ```
@@ -110,7 +136,7 @@ src/
 
 | Tabla         | Para qué sirve                                              |
 | ------------- | ----------------------------------------------------------- |
-| `categories`  | Niños, Niñas, Bebés, Colecciones, Ofertas…                   |
+| `categories`  | Niños, Niñas, Bebés, Combos, Ofertas…                        |
 | `products`    | Precio, tallas (`jsonb`), imágenes, stock, destacado, nuevo  |
 | `orders`      | Datos del cliente, estado y totales del pedido               |
 | `order_items` | Línea de pedido con nombre y precio congelados en la compra  |
@@ -155,7 +181,8 @@ COSTO_ENVIO = 15;         // Bs. por debajo de ese monto
 
 ## Pendiente
 
-- Autenticación de clientes (`/cuenta` es hoy un marcador).
+- Cuentas de cliente (hoy se compra sin registrarse: nombre y teléfono).
 - Pasarela de pago real; el checkout registra el pedido para confirmarlo por
   WhatsApp.
-- Panel de administración para cargar productos sin tocar código.
+- Cargar y editar productos desde el panel (por ahora solo muestra pedidos; el
+  catálogo se cambia en `src/lib/catalog.ts` + `npm run db:seed`).

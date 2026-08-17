@@ -1,15 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
-import { CartProvider } from "@/components/CartProvider";
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
-import CartDrawer from "@/components/CartDrawer";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import FloatingCart from "@/components/FloatingCart";
-import { getCategories } from "@/lib/data";
-import { REDES, UBICACION } from "@/lib/tienda";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -49,69 +40,24 @@ export const metadata: Metadata = {
   },
 };
 
-/**
- * Ficha del negocio para buscadores: enlaza la tienda con sus redes (`sameAs`)
- * y con el punto exacto del mapa, que es lo que alimenta el panel lateral de
- * Google y las búsquedas del tipo "zapatos para niños cerca de mí".
- */
-const FICHA_NEGOCIO = {
-  "@context": "https://schema.org",
-  "@type": "ShoeStore",
-  name: "Importadora Piecitos",
-  alternateName: UBICACION.nombre,
-  description: "Calzados infantiles importados en Santa Cruz de la Sierra, Bolivia.",
-  image: "/brand/logo.webp",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: UBICACION.calle,
-    addressLocality: UBICACION.ciudad,
-    addressRegion: "Santa Cruz",
-    addressCountry: "BO",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: UBICACION.lat,
-    longitude: UBICACION.lng,
-  },
-  hasMap: UBICACION.mapa,
-  currenciesAccepted: "BOB",
-  sameAs: REDES.map((r) => r.href),
-};
-
 export const viewport: Viewport = {
   themeColor: "#3f7724",
   width: "device-width",
   initialScale: 1,
 };
 
-export default async function RootLayout({
+/**
+ * Layout raíz: solo el documento y las fuentes.
+ *
+ * La cabecera, el footer y el carrito viven en el grupo `(tienda)` para que
+ * `/admin` pueda tener su propia pantalla, sin nada de la tienda.
+ */
+export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const categories = await getCategories();
-
   return (
     <html lang="es-BO" className={`${fredoka.variable} ${nunito.variable}`}>
-      <body className="min-h-dvh antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(FICHA_NEGOCIO) }}
-        />
-        <CartProvider>
-          <a
-            href="#contenido"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-100 focus:rounded-lg focus:bg-jungle-600 focus:px-4 focus:py-2 focus:font-bold focus:text-white"
-          >
-            Saltar al contenido
-          </a>
-          <Header />
-          <NavBar categories={categories} />
-          <main id="contenido">{children}</main>
-          <Footer />
-          <CartDrawer />
-          <FloatingCart />
-          <WhatsAppButton />
-        </CartProvider>
-      </body>
+      <body className="min-h-dvh antialiased">{children}</body>
     </html>
   );
 }
