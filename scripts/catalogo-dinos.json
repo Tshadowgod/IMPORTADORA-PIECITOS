@@ -1,0 +1,2663 @@
+[
+  {
+    "slug": "primeros-pasos-azul-plateado",
+    "nombre": "Primeros Pasos Azul/Plateado",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 27.",
+    "color": "Azul/Plateado",
+    "tallas": [
+      24,
+      25,
+      27
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-plateado.webp"
+    ],
+    "stock": 9,
+    "pagina": 5,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-oro",
+    "nombre": "Primeros Pasos Oro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 27.",
+    "color": "Oro",
+    "tallas": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-oro.webp"
+    ],
+    "stock": 12,
+    "pagina": 5,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-negro-oro",
+    "nombre": "Primeros Pasos Negro/Oro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 25 a 29.",
+    "color": "Negro/Oro",
+    "tallas": [
+      25,
+      27,
+      28,
+      29
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-oro.webp"
+    ],
+    "stock": 12,
+    "pagina": 6,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-azul-rosa",
+    "nombre": "Primeros Pasos Azul/Rosa",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 22 a 29.",
+    "color": "Azul/Rosa",
+    "tallas": [
+      22,
+      25,
+      29
+    ],
+    "categoria": "ninas",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-rosa.webp"
+    ],
+    "stock": 9,
+    "pagina": 6,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-plateado-rosa",
+    "nombre": "Primeros Pasos Plateado/Rosa",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 22 a 28.",
+    "color": "Plateado/Rosa",
+    "tallas": [
+      22,
+      24,
+      25,
+      27,
+      28
+    ],
+    "categoria": "ninas",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-plateado-rosa.webp"
+    ],
+    "stock": 15,
+    "pagina": 6,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-azul-celeste",
+    "nombre": "Primeros Pasos Azul/Celeste",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 27.",
+    "color": "Azul/Celeste",
+    "tallas": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-celeste.webp"
+    ],
+    "stock": 12,
+    "pagina": 7,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-cafe-naranja",
+    "nombre": "Primeros Pasos Café/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 29 a 29.",
+    "color": "Café/Naranja",
+    "tallas": [
+      29
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-naranja.webp"
+    ],
+    "stock": 3,
+    "pagina": 7,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-naranja",
+    "nombre": "Primeros Pasos Verde/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 25 a 29.",
+    "color": "Verde/Naranja",
+    "tallas": [
+      25,
+      27,
+      29
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-naranja.webp"
+    ],
+    "stock": 9,
+    "pagina": 7,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-verde-naranja-negro",
+    "nombre": "Primeros Pasos Verde/Naranja/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 21.",
+    "color": "Verde/Naranja/Negro",
+    "tallas": [
+      20,
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-naranja-negro.webp"
+    ],
+    "stock": 6,
+    "pagina": 8,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-cafe-amarillo-negro",
+    "nombre": "Primeros Pasos Cafe/Amarillo/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 22.",
+    "color": "Cafe/Amarillo/Negro",
+    "tallas": [
+      20,
+      22
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-amarillo-negro.webp"
+    ],
+    "stock": 6,
+    "pagina": 8,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-naranja-negro-2",
+    "nombre": "Primeros Pasos Verde/Naranja/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 22.",
+    "color": "Verde/Naranja/Negro",
+    "tallas": [
+      21,
+      22
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-naranja-negro-2.webp"
+    ],
+    "stock": 6,
+    "pagina": 8,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-rojo-plateado",
+    "nombre": "Primeros Pasos Rojo/Plateado",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Rojo/Plateado",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-rojo-plateado.webp"
+    ],
+    "stock": 3,
+    "pagina": 9,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-amarillo-rojo",
+    "nombre": "Primeros Pasos Amarillo/Rojo",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 21.",
+    "color": "Amarillo/Rojo",
+    "tallas": [
+      20,
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-amarillo-rojo.webp"
+    ],
+    "stock": 6,
+    "pagina": 9,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-negro",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Verde/Negro",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 10,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-azul-plateado-2",
+    "nombre": "Primeros Pasos Azul/Plateado",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 20.",
+    "color": "Azul/Plateado",
+    "tallas": [
+      20
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-plateado-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 10,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-azul",
+    "nombre": "Primeros Pasos Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 23.",
+    "color": "Azul",
+    "tallas": [
+      20,
+      21,
+      23
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul.webp"
+    ],
+    "stock": 9,
+    "pagina": 11,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-gris",
+    "nombre": "Primeros Pasos Gris",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 20.",
+    "color": "Gris",
+    "tallas": [
+      20
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-gris.webp"
+    ],
+    "stock": 3,
+    "pagina": 11,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-azul-2",
+    "nombre": "Primeros Pasos Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 23.",
+    "color": "Azul",
+    "tallas": [
+      21,
+      23
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-2.webp"
+    ],
+    "stock": 6,
+    "pagina": 11,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-verde-azul",
+    "nombre": "Primeros Pasos Verde/Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 21.",
+    "color": "Verde/Azul",
+    "tallas": [
+      20,
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-azul.webp"
+    ],
+    "stock": 6,
+    "pagina": 12,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-cafe-naranja-2",
+    "nombre": "Primeros Pasos Cafe/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 20.",
+    "color": "Cafe/Naranja",
+    "tallas": [
+      20
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-naranja-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 12,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-cafe-rojo",
+    "nombre": "Primeros Pasos Cafe/Rojo",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Cafe/Rojo",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-rojo.webp"
+    ],
+    "stock": 3,
+    "pagina": 13,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-negro-naranja",
+    "nombre": "Primeros Pasos Negro/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 20.",
+    "color": "Negro/Naranja",
+    "tallas": [
+      20
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-naranja.webp"
+    ],
+    "stock": 3,
+    "pagina": 13,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-naranja-2",
+    "nombre": "Primeros Pasos Verde/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 21.",
+    "color": "Verde/Naranja",
+    "tallas": [
+      20,
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-naranja-2.webp"
+    ],
+    "stock": 6,
+    "pagina": 13,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-blanco-negro",
+    "nombre": "Primeros Pasos Blanco/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 20 a 21.",
+    "color": "Blanco/Negro",
+    "tallas": [
+      20,
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-blanco-negro.webp"
+    ],
+    "stock": 6,
+    "pagina": 14,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-verde-negro-2",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Verde/Negro",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 14,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-cafe",
+    "nombre": "Primeros Pasos Cafe",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 25.",
+    "color": "Cafe",
+    "tallas": [
+      21,
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe.webp"
+    ],
+    "stock": 6,
+    "pagina": 15,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-arena-naranja",
+    "nombre": "Primeros Pasos Arena/Naranja",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Arena/Naranja",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-arena-naranja.webp"
+    ],
+    "stock": 3,
+    "pagina": 15,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde",
+    "nombre": "Primeros Pasos Verde",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 25 a 25.",
+    "color": "Verde",
+    "tallas": [
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde.webp"
+    ],
+    "stock": 3,
+    "pagina": 15,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-cafe-negro",
+    "nombre": "Primeros Pasos Cafe/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Cafe/Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 16,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-celeste-negro",
+    "nombre": "Primeros Pasos Celeste/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 26 a 26.",
+    "color": "Celeste/Negro",
+    "tallas": [
+      26
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-celeste-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 16,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-negro-3",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 25 a 25.",
+    "color": "Verde/Negro",
+    "tallas": [
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro-3.webp"
+    ],
+    "stock": 3,
+    "pagina": 16,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-azul-negro",
+    "nombre": "Primeros Pasos Azul/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 25 a 25.",
+    "color": "Azul/Negro",
+    "tallas": [
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 17,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-negro-verde",
+    "nombre": "Primeros Pasos Negro/Verde",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 23.",
+    "color": "Negro/Verde",
+    "tallas": [
+      21,
+      23
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-verde.webp"
+    ],
+    "stock": 6,
+    "pagina": 17,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-2",
+    "nombre": "Primeros Pasos Verde",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Verde",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 18,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-bronce",
+    "nombre": "Primeros Pasos Bronce",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Bronce",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-bronce.webp"
+    ],
+    "stock": 3,
+    "pagina": 18,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-azul-3",
+    "nombre": "Primeros Pasos Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Azul",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-3.webp"
+    ],
+    "stock": 3,
+    "pagina": 18,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-verde-negro-4",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Verde/Negro",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro-4.webp"
+    ],
+    "stock": 3,
+    "pagina": 19,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-negro",
+    "nombre": "Primeros Pasos Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 19,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-negro-5",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 25.",
+    "color": "Verde/Negro",
+    "tallas": [
+      24,
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro-5.webp"
+    ],
+    "stock": 6,
+    "pagina": 19,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-negro-grafiti",
+    "nombre": "Primeros Pasos Negro Grafiti",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 24.",
+    "color": "Negro Grafiti",
+    "tallas": [
+      21,
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-grafiti.webp"
+    ],
+    "stock": 6,
+    "pagina": 20,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-negro-azul",
+    "nombre": "Primeros Pasos Negro/Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Negro/Azul",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-azul.webp"
+    ],
+    "stock": 3,
+    "pagina": 20,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-azul-verde",
+    "nombre": "Primeros Pasos Azul/Verde",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Azul/Verde",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-azul-verde.webp"
+    ],
+    "stock": 3,
+    "pagina": 20,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-cafe-claro",
+    "nombre": "Primeros Pasos Cafe Claro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Cafe Claro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-claro.webp"
+    ],
+    "stock": 3,
+    "pagina": 21,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-rojo-azul",
+    "nombre": "Primeros Pasos Rojo/Azul",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 22 a 23.",
+    "color": "Rojo/Azul",
+    "tallas": [
+      22,
+      23
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-rojo-azul.webp"
+    ],
+    "stock": 6,
+    "pagina": 21,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-cafe-claro-2",
+    "nombre": "Primeros Pasos Cafe Claro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Cafe Claro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-claro-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 22,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-rojo-negro",
+    "nombre": "Primeros Pasos Rojo/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 21 a 21.",
+    "color": "Rojo/Negro",
+    "tallas": [
+      21
+    ],
+    "categoria": "bebes",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-rojo-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 22,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-cafe-negro-2",
+    "nombre": "Primeros Pasos Cafe/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Cafe/Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-negro-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 22,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-cafe-2",
+    "nombre": "Primeros Pasos Café",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 27 a 27.",
+    "color": "Café",
+    "tallas": [
+      27
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 23,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-negro-2",
+    "nombre": "Primeros Pasos Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-negro-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 23,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-verde-negro-6",
+    "nombre": "Primeros Pasos Verde/Negro",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Verde/Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-negro-6.webp"
+    ],
+    "stock": 3,
+    "pagina": 23,
+    "orden": 3
+  },
+  {
+    "slug": "primeros-pasos-cafe-3",
+    "nombre": "Primeros Pasos Cafe",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Cafe",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-3.webp"
+    ],
+    "stock": 3,
+    "pagina": 24,
+    "orden": 1
+  },
+  {
+    "slug": "primeros-pasos-verde-3",
+    "nombre": "Primeros Pasos Verde",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Verde",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-verde-3.webp"
+    ],
+    "stock": 3,
+    "pagina": 24,
+    "orden": 2
+  },
+  {
+    "slug": "primeros-pasos-cafe-4",
+    "nombre": "Primeros Pasos Café",
+    "seccion": "primeros-pasos",
+    "descripcion": "Suela blanda y cierre facil: el primer tenis de dino, listo para dejar huella el dia uno. Tallas 24 a 24.",
+    "color": "Café",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/primeros-pasos-cafe-4.webp"
+    ],
+    "stock": 3,
+    "pagina": 24,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-cafe",
+    "nombre": "Dino Clasico Cafe",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 30 a 35.",
+    "color": "Cafe",
+    "tallas": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe.webp"
+    ],
+    "stock": 18,
+    "pagina": 26,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-azul",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 30 a 35.",
+    "color": "Azul",
+    "tallas": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul.webp"
+    ],
+    "stock": 18,
+    "pagina": 26,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-verde",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 31 a 34.",
+    "color": "Verde",
+    "tallas": [
+      31,
+      32,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde.webp"
+    ],
+    "stock": 9,
+    "pagina": 26,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-cafe-naranja",
+    "nombre": "Dino Clasico Café/Naranja",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 27 a 32.",
+    "color": "Café/Naranja",
+    "tallas": [
+      27,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-naranja.webp"
+    ],
+    "stock": 6,
+    "pagina": 27,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-verde-2",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 28 a 34.",
+    "color": "Verde",
+    "tallas": [
+      28,
+      29,
+      31,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-2.webp"
+    ],
+    "stock": 12,
+    "pagina": 27,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-azul-2",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 31 a 35.",
+    "color": "Azul",
+    "tallas": [
+      31,
+      32,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul-2.webp"
+    ],
+    "stock": 12,
+    "pagina": 27,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-cafe-2",
+    "nombre": "Dino Clasico Cafe",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 27 a 33.",
+    "color": "Cafe",
+    "tallas": [
+      27,
+      29,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-2.webp"
+    ],
+    "stock": 15,
+    "pagina": 28,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-verde-3",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 29 a 34.",
+    "color": "Verde",
+    "tallas": [
+      29,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-3.webp"
+    ],
+    "stock": 9,
+    "pagina": 28,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-azul-3",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 30.",
+    "color": "Azul",
+    "tallas": [
+      24,
+      30
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul-3.webp"
+    ],
+    "stock": 6,
+    "pagina": 28,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-verde-4",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 31 a 35.",
+    "color": "Verde",
+    "tallas": [
+      31,
+      32,
+      33,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-4.webp"
+    ],
+    "stock": 12,
+    "pagina": 29,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-negro",
+    "nombre": "Dino Clasico Negro",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 35.",
+    "color": "Negro",
+    "tallas": [
+      24,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro.webp"
+    ],
+    "stock": 18,
+    "pagina": 29,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-negro-2",
+    "nombre": "Dino Clasico Negro",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 34.",
+    "color": "Negro",
+    "tallas": [
+      24,
+      29,
+      31,
+      32,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-2.webp"
+    ],
+    "stock": 15,
+    "pagina": 29,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-verde-5",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 34.",
+    "color": "Verde",
+    "tallas": [
+      24,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-5.webp"
+    ],
+    "stock": 15,
+    "pagina": 30,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-cafe-naranja-2",
+    "nombre": "Dino Clasico Café/Naranja",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 31 a 34.",
+    "color": "Café/Naranja",
+    "tallas": [
+      31,
+      32,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-naranja-2.webp"
+    ],
+    "stock": 9,
+    "pagina": 30,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-rojo-azul",
+    "nombre": "Dino Clasico Rojo/Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 25 a 35.",
+    "color": "Rojo/Azul",
+    "tallas": [
+      25,
+      33,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-rojo-azul.webp"
+    ],
+    "stock": 9,
+    "pagina": 31,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-azul-4",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 29 a 33.",
+    "color": "Azul",
+    "tallas": [
+      29,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul-4.webp"
+    ],
+    "stock": 12,
+    "pagina": 31,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-negro-rojo",
+    "nombre": "Dino Clasico Negro/Rojo",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 34.",
+    "color": "Negro/Rojo",
+    "tallas": [
+      24,
+      29,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-rojo.webp"
+    ],
+    "stock": 18,
+    "pagina": 32,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-cafe-naranja-3",
+    "nombre": "Dino Clasico Café/Naranja",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 32.",
+    "color": "Café/Naranja",
+    "tallas": [
+      24,
+      25,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-naranja-3.webp"
+    ],
+    "stock": 9,
+    "pagina": 32,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-verde-6",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 32 a 34.",
+    "color": "Verde",
+    "tallas": [
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-6.webp"
+    ],
+    "stock": 9,
+    "pagina": 32,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-negro-azul",
+    "nombre": "Dino Clasico Negro/Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 29 a 35.",
+    "color": "Negro/Azul",
+    "tallas": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-azul.webp"
+    ],
+    "stock": 21,
+    "pagina": 33,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-negro-verde",
+    "nombre": "Dino Clasico Negro/Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 24 a 34.",
+    "color": "Negro/Verde",
+    "tallas": [
+      24,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-verde.webp"
+    ],
+    "stock": 6,
+    "pagina": 33,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-negro-3",
+    "nombre": "Dino Clasico Negro",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 31 a 34.",
+    "color": "Negro",
+    "tallas": [
+      31,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-3.webp"
+    ],
+    "stock": 6,
+    "pagina": 34,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-cafe-3",
+    "nombre": "Dino Clasico Café",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 30 a 34.",
+    "color": "Café",
+    "tallas": [
+      30,
+      31,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-3.webp"
+    ],
+    "stock": 12,
+    "pagina": 34,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-negro-4",
+    "nombre": "Dino Clasico Negro",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 29 a 35.",
+    "color": "Negro",
+    "tallas": [
+      29,
+      32,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-negro-4.webp"
+    ],
+    "stock": 12,
+    "pagina": 34,
+    "orden": 3
+  },
+  {
+    "slug": "dino-clasico-cafe-4",
+    "nombre": "Dino Clasico Cafe",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 26 a 35.",
+    "color": "Cafe",
+    "tallas": [
+      26,
+      27,
+      31,
+      32,
+      33,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-cafe-4.webp"
+    ],
+    "stock": 18,
+    "pagina": 35,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-azul-5",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 28 a 35.",
+    "color": "Azul",
+    "tallas": [
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul-5.webp"
+    ],
+    "stock": 21,
+    "pagina": 35,
+    "orden": 2
+  },
+  {
+    "slug": "dino-clasico-azul-6",
+    "nombre": "Dino Clasico Azul",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 28 a 35.",
+    "color": "Azul",
+    "tallas": [
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-azul-6.webp"
+    ],
+    "stock": 21,
+    "pagina": 36,
+    "orden": 1
+  },
+  {
+    "slug": "dino-clasico-verde-7",
+    "nombre": "Dino Clasico Verde",
+    "seccion": "dino-clasico",
+    "descripcion": "El modelo de siempre, con hocico y dientes de dinosaurio: huellas de dino en cada paso. Tallas 29 a 35.",
+    "color": "Verde",
+    "tallas": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-clasico-verde-7.webp"
+    ],
+    "stock": 21,
+    "pagina": 36,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-cafe-claro",
+    "nombre": "Dino Luces Cafe Claro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 24.",
+    "color": "Cafe Claro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-cafe-claro.webp"
+    ],
+    "stock": 3,
+    "pagina": 38,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-cafe",
+    "nombre": "Dino Luces Café",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 30 a 33.",
+    "color": "Café",
+    "tallas": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-cafe.webp"
+    ],
+    "stock": 12,
+    "pagina": 38,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-verde",
+    "nombre": "Dino Luces Verde",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 33.",
+    "color": "Verde",
+    "tallas": [
+      24,
+      26,
+      29,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-verde.webp"
+    ],
+    "stock": 12,
+    "pagina": 39,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-negro",
+    "nombre": "Dino Luces Negro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 24.",
+    "color": "Negro",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-negro.webp"
+    ],
+    "stock": 3,
+    "pagina": 39,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-verde-negro",
+    "nombre": "Dino Luces Verde/Negro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 27 a 33.",
+    "color": "Verde/Negro",
+    "tallas": [
+      27,
+      28,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-verde-negro.webp"
+    ],
+    "stock": 18,
+    "pagina": 40,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-azul-negro",
+    "nombre": "Dino Luces Azul/Negro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 27 a 34.",
+    "color": "Azul/Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-azul-negro.webp"
+    ],
+    "stock": 24,
+    "pagina": 40,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-cafe-negro",
+    "nombre": "Dino Luces Cafe/Negro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 27 a 32.",
+    "color": "Cafe/Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-cafe-negro.webp"
+    ],
+    "stock": 18,
+    "pagina": 40,
+    "orden": 3
+  },
+  {
+    "slug": "dino-luces-blanco",
+    "nombre": "Dino Luces Blanco",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 25 a 34.",
+    "color": "Blanco",
+    "tallas": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-blanco.webp"
+    ],
+    "stock": 30,
+    "pagina": 41,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-azul-rojo-blanco",
+    "nombre": "Dino Luces Azul/Rojo/Blanco",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 25 a 34.",
+    "color": "Azul/Rojo/Blanco",
+    "tallas": [
+      25,
+      26,
+      28,
+      29,
+      31,
+      32,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-azul-rojo-blanco.webp"
+    ],
+    "stock": 21,
+    "pagina": 41,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-morado-rosa-celeste",
+    "nombre": "Dino Luces Morado/Rosa/Celeste",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 28 a 32.",
+    "color": "Morado/Rosa/Celeste",
+    "tallas": [
+      28,
+      29,
+      32
+    ],
+    "categoria": "ninas",
+    "imagenes": [
+      "/productos/dino/dino-luces-morado-rosa-celeste.webp"
+    ],
+    "stock": 9,
+    "pagina": 41,
+    "orden": 3
+  },
+  {
+    "slug": "dino-luces-negro-azul",
+    "nombre": "Dino Luces Negro/Azul",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 30 a 34.",
+    "color": "Negro/Azul",
+    "tallas": [
+      30,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-negro-azul.webp"
+    ],
+    "stock": 6,
+    "pagina": 42,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-negro-verde",
+    "nombre": "Dino Luces Negro/Verde",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 34.",
+    "color": "Negro/Verde",
+    "tallas": [
+      24,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-negro-verde.webp"
+    ],
+    "stock": 6,
+    "pagina": 42,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-negro-rojo",
+    "nombre": "Dino Luces Negro/Rojo",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 25.",
+    "color": "Negro/Rojo",
+    "tallas": [
+      24,
+      25
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-negro-rojo.webp"
+    ],
+    "stock": 6,
+    "pagina": 43,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-azul",
+    "nombre": "Dino Luces Azul",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 24.",
+    "color": "Azul",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-azul.webp"
+    ],
+    "stock": 3,
+    "pagina": 43,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-negro-rojo-2",
+    "nombre": "Dino Luces Negro/Rojo",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 24 a 24.",
+    "color": "Negro/Rojo",
+    "tallas": [
+      24
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-negro-rojo-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 44,
+    "orden": 1
+  },
+  {
+    "slug": "dino-luces-verde-negro-2",
+    "nombre": "Dino Luces Verde/Negro",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 33 a 33.",
+    "color": "Verde/Negro",
+    "tallas": [
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-verde-negro-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 44,
+    "orden": 2
+  },
+  {
+    "slug": "dino-luces-verde-2",
+    "nombre": "Dino Luces Verde",
+    "seccion": "dino-luces",
+    "descripcion": "Con luces en la suela que se encienden al caminar: ilumina la noche con cada paso. Tallas 32 a 32.",
+    "color": "Verde",
+    "tallas": [
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-luces-verde-2.webp"
+    ],
+    "stock": 3,
+    "pagina": 44,
+    "orden": 3
+  },
+  {
+    "slug": "dino-3d-led-negro-rato-rojo",
+    "nombre": "Dino 3D LED Negro Rato Rojo",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 31.",
+    "color": "Negro Rato Rojo",
+    "tallas": [
+      27,
+      28,
+      30,
+      31
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-negro-rato-rojo.webp"
+    ],
+    "stock": 12,
+    "pagina": 46,
+    "orden": 1
+  },
+  {
+    "slug": "dino-3d-led-negro-rato",
+    "nombre": "Dino 3D LED Negro Rato",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 25 a 33.",
+    "color": "Negro Rato",
+    "tallas": [
+      25,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-negro-rato.webp"
+    ],
+    "stock": 21,
+    "pagina": 46,
+    "orden": 2
+  },
+  {
+    "slug": "dino-3d-led-verde",
+    "nombre": "Dino 3D LED Verde",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 24 a 34.",
+    "color": "Verde",
+    "tallas": [
+      24,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-verde.webp"
+    ],
+    "stock": 24,
+    "pagina": 47,
+    "orden": 1
+  },
+  {
+    "slug": "dino-3d-led-cafe",
+    "nombre": "Dino 3D LED Café",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 25 a 34.",
+    "color": "Café",
+    "tallas": [
+      25,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-cafe.webp"
+    ],
+    "stock": 24,
+    "pagina": 47,
+    "orden": 2
+  },
+  {
+    "slug": "dino-3d-led-azul",
+    "nombre": "Dino 3D LED Azul",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 25 a 34.",
+    "color": "Azul",
+    "tallas": [
+      25,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-azul.webp"
+    ],
+    "stock": 24,
+    "pagina": 48,
+    "orden": 1
+  },
+  {
+    "slug": "dino-3d-led-negro",
+    "nombre": "Dino 3D LED Negro",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 34.",
+    "color": "Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-negro.webp"
+    ],
+    "stock": 24,
+    "pagina": 48,
+    "orden": 2
+  },
+  {
+    "slug": "dino-3d-led-azul-negro",
+    "nombre": "Dino 3D LED Azul/Negro",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 33.",
+    "color": "Azul/Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-azul-negro.webp"
+    ],
+    "stock": 21,
+    "pagina": 49,
+    "orden": 1
+  },
+  {
+    "slug": "dino-3d-led-negro-naranja",
+    "nombre": "Dino 3D LED Negro/Naranja",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 33.",
+    "color": "Negro/Naranja",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-negro-naranja.webp"
+    ],
+    "stock": 21,
+    "pagina": 49,
+    "orden": 2
+  },
+  {
+    "slug": "dino-3d-led-cafe-negro",
+    "nombre": "Dino 3D LED Café/Negro",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 33.",
+    "color": "Café/Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-cafe-negro.webp"
+    ],
+    "stock": 21,
+    "pagina": 50,
+    "orden": 1
+  },
+  {
+    "slug": "dino-3d-led-verde-negro",
+    "nombre": "Dino 3D LED Verde/Negro",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 33.",
+    "color": "Verde/Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-verde-negro.webp"
+    ],
+    "stock": 21,
+    "pagina": 50,
+    "orden": 2
+  },
+  {
+    "slug": "dino-3d-led-negro-azul",
+    "nombre": "Dino 3D LED Negro/Azul",
+    "seccion": "dino-3d-led",
+    "descripcion": "Relieve 3D en todo el cuerpo y luces LED: los dinos no solo corren, tambien vigilan. Tallas 27 a 33.",
+    "color": "Negro/Azul",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dino-3d-led-negro-azul.webp"
+    ],
+    "stock": 21,
+    "pagina": 50,
+    "orden": 3
+  },
+  {
+    "slug": "dientes-3d-led-verde-negro",
+    "nombre": "Dientes 3D LED Verde/Negro",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 33.",
+    "color": "Verde/Negro",
+    "tallas": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-verde-negro.webp"
+    ],
+    "stock": 27,
+    "pagina": 52,
+    "orden": 1
+  },
+  {
+    "slug": "dientes-3d-led-azul-negro",
+    "nombre": "Dientes 3D LED Azul/Negro",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 24 a 33.",
+    "color": "Azul/Negro",
+    "tallas": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-azul-negro.webp"
+    ],
+    "stock": 30,
+    "pagina": 52,
+    "orden": 2
+  },
+  {
+    "slug": "dientes-3d-led-dorado",
+    "nombre": "Dientes 3D LED Dorado",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 24 a 33.",
+    "color": "Dorado",
+    "tallas": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-dorado.webp"
+    ],
+    "stock": 27,
+    "pagina": 53,
+    "orden": 1
+  },
+  {
+    "slug": "dientes-3d-led-gris",
+    "nombre": "Dientes 3D LED Gris",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 33.",
+    "color": "Gris",
+    "tallas": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-gris.webp"
+    ],
+    "stock": 27,
+    "pagina": 53,
+    "orden": 2
+  },
+  {
+    "slug": "dientes-3d-led-azul-verde",
+    "nombre": "Dientes 3D LED Azul/Verde",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 32.",
+    "color": "Azul/Verde",
+    "tallas": [
+      25,
+      27,
+      28,
+      29,
+      30,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-azul-verde.webp"
+    ],
+    "stock": 18,
+    "pagina": 54,
+    "orden": 1
+  },
+  {
+    "slug": "dientes-3d-led-negro",
+    "nombre": "Dientes 3D LED Negro",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 28 a 33.",
+    "color": "Negro",
+    "tallas": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-negro.webp"
+    ],
+    "stock": 18,
+    "pagina": 54,
+    "orden": 2
+  },
+  {
+    "slug": "dientes-3d-led-cafe-naranja",
+    "nombre": "Dientes 3D LED Café/Naranja",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 33.",
+    "color": "Café/Naranja",
+    "tallas": [
+      25,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-cafe-naranja.webp"
+    ],
+    "stock": 21,
+    "pagina": 55,
+    "orden": 1
+  },
+  {
+    "slug": "dientes-3d-led-negro-2",
+    "nombre": "Dientes 3D LED Negro",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 32.",
+    "color": "Negro",
+    "tallas": [
+      25,
+      27,
+      30,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-negro-2.webp"
+    ],
+    "stock": 12,
+    "pagina": 55,
+    "orden": 2
+  },
+  {
+    "slug": "dientes-3d-led-verde-dorado",
+    "nombre": "Dientes 3D LED Verde/Dorado",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 31.",
+    "color": "Verde/Dorado",
+    "tallas": [
+      25,
+      28,
+      29,
+      30,
+      31
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-verde-dorado.webp"
+    ],
+    "stock": 15,
+    "pagina": 56,
+    "orden": 1
+  },
+  {
+    "slug": "dientes-3d-led-azul-celeste",
+    "nombre": "Dientes 3D LED Azul/Celeste",
+    "seccion": "dientes-3d-led",
+    "descripcion": "Dientes en 3D y luces LED en la suela: pasos que rugen y brillan. Tallas 25 a 32.",
+    "color": "Azul/Celeste",
+    "tallas": [
+      25,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/dientes-3d-led-azul-celeste.webp"
+    ],
+    "stock": 21,
+    "pagina": 56,
+    "orden": 2
+  },
+  {
+    "slug": "rex-urbano-nude",
+    "nombre": "Rex Urbano Nude",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 25 a 34.",
+    "color": "Nude",
+    "tallas": [
+      25,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-nude.webp"
+    ],
+    "stock": 27,
+    "pagina": 58,
+    "orden": 1
+  },
+  {
+    "slug": "rex-urbano-azul",
+    "nombre": "Rex Urbano Azul",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 25 a 34.",
+    "color": "Azul",
+    "tallas": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-azul.webp"
+    ],
+    "stock": 30,
+    "pagina": 58,
+    "orden": 2
+  },
+  {
+    "slug": "rex-urbano-grafito",
+    "nombre": "Rex Urbano Grafito",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 27 a 34.",
+    "color": "Grafito",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-grafito.webp"
+    ],
+    "stock": 24,
+    "pagina": 59,
+    "orden": 1
+  },
+  {
+    "slug": "rex-urbano-blanco",
+    "nombre": "Rex Urbano Blanco",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 25 a 34.",
+    "color": "Blanco",
+    "tallas": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-blanco.webp"
+    ],
+    "stock": 30,
+    "pagina": 59,
+    "orden": 2
+  },
+  {
+    "slug": "rex-urbano-verde",
+    "nombre": "Rex Urbano Verde",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 25 a 34.",
+    "color": "Verde",
+    "tallas": [
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-verde.webp"
+    ],
+    "stock": 27,
+    "pagina": 60,
+    "orden": 1
+  },
+  {
+    "slug": "rex-urbano-negro",
+    "nombre": "Rex Urbano Negro",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 27 a 34.",
+    "color": "Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-negro.webp"
+    ],
+    "stock": 24,
+    "pagina": 60,
+    "orden": 2
+  },
+  {
+    "slug": "rex-urbano-cafe",
+    "nombre": "Rex Urbano Café",
+    "seccion": "rex-urbano",
+    "descripcion": "Linea urbana con el relieve REX en el talon, para todos los dias. Tallas 27 a 34.",
+    "color": "Café",
+    "tallas": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/rex-urbano-cafe.webp"
+    ],
+    "stock": 24,
+    "pagina": 60,
+    "orden": 3
+  },
+  {
+    "slug": "colegial-blanco",
+    "nombre": "Colegial Blanco",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 25 a 34.",
+    "color": "Blanco",
+    "tallas": [
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-blanco.webp"
+    ],
+    "stock": 27,
+    "pagina": 61,
+    "orden": 1
+  },
+  {
+    "slug": "colegial-negro",
+    "nombre": "Colegial Negro",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 27 a 35.",
+    "color": "Negro",
+    "tallas": [
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-negro.webp"
+    ],
+    "stock": 24,
+    "pagina": 61,
+    "orden": 2
+  },
+  {
+    "slug": "colegial-negro-2",
+    "nombre": "Colegial Negro",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 27 a 34.",
+    "color": "Negro",
+    "tallas": [
+      27,
+      30,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-negro-2.webp"
+    ],
+    "stock": 15,
+    "pagina": 61,
+    "orden": 3
+  },
+  {
+    "slug": "colegial-blanco-2",
+    "nombre": "Colegial Blanco",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 25 a 34.",
+    "color": "Blanco",
+    "tallas": [
+      25,
+      26,
+      29,
+      31,
+      32,
+      34
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-blanco-2.webp"
+    ],
+    "stock": 18,
+    "pagina": 61,
+    "orden": 4
+  },
+  {
+    "slug": "colegial-negro-blanco",
+    "nombre": "Colegial Negro/Blanco",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 26 a 35.",
+    "color": "Negro/Blanco",
+    "tallas": [
+      26,
+      27,
+      30,
+      33,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-negro-blanco.webp"
+    ],
+    "stock": 15,
+    "pagina": 61,
+    "orden": 5
+  },
+  {
+    "slug": "colegial-blanco-negro",
+    "nombre": "Colegial Blanco/Negro",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 26 a 35.",
+    "color": "Blanco/Negro",
+    "tallas": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "categoria": "ninos",
+    "imagenes": [
+      "/productos/dino/colegial-blanco-negro.webp"
+    ],
+    "stock": 30,
+    "pagina": 61,
+    "orden": 6
+  },
+  {
+    "slug": "colegial-rosado-lila-blanco",
+    "nombre": "Colegial Rosado/Lila/Blanco",
+    "seccion": "colegial",
+    "descripcion": "Blanco y negro, sobrios y resistentes: la coleccion pensada para el uniforme. Tallas 26 a 34.",
+    "color": "Rosado/Lila/Blanco",
+    "tallas": [
+      26,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "categoria": "ninas",
+    "imagenes": [
+      "/productos/dino/colegial-rosado-lila-blanco.webp"
+    ],
+    "stock": 24,
+    "pagina": 61,
+    "orden": 7
+  }
+]

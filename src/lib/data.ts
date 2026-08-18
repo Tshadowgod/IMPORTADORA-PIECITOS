@@ -90,7 +90,10 @@ export async function getProducts(opts: {
   search?: string;
   limit?: number;
 } = {}): Promise<ProductDTO[]> {
-  const { category, search, limit = 60 } = opts;
+  // El tope por defecto cubre el catálogo entero (133 modelos del PDF de la
+  // importadora): la página de productos no tiene paginado, así que un tope
+  // más bajo escondería modelos sin avisar.
+  const { category, search, limit = 200 } = opts;
 
   const filterDemo = () =>
     demoProducts
