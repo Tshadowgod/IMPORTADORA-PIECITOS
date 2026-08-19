@@ -4,13 +4,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCart } from "./CartProvider";
 import ProductThumb, { productTint } from "./ProductThumb";
-import { formatBs } from "@/lib/format";
+import { formatBs, PRECIO_A_CONSULTAR, sinPrecio } from "@/lib/format";
+import { linkWhatsApp } from "@/lib/tienda";
 import type { ProductDTO } from "@/lib/types";
 
 export default function ProductCard({ product }: { product: ProductDTO }) {
   const { add } = useCart();
   const [size, setSize] = useState<number | null>(product.sizes[0] ?? null);
   const agotado = product.stock <= 0;
+  const aConsultar = sinPrecio(product.price);
 
   const enOferta =
     product.compareAtPrice !== null && product.compareAtPrice > product.price;
@@ -66,16 +68,22 @@ export default function ProductCard({ product }: { product: ProductDTO }) {
           </Link>
         </h3>
 
-        <p className="flex items-baseline gap-2">
-          <span className="font-display text-xl font-bold text-lava-600">
-            {formatBs(product.price)}
-          </span>
-          {enOferta && (
-            <span className="text-sm font-semibold text-stone-warm-500 line-through">
-              {formatBs(product.compareAtPrice!)}
+        {aConsultar ? (
+          <p className="font-display text-base font-bold text-jungle-700">
+            {PRECIO_A_CONSULTAR}
+          </p>
+        ) : (
+          <p className="flex items-baseline gap-2">
+            <span className="font-display text-xl font-bold text-lava-600">
+              {formatBs(product.price)}
             </span>
-          )}
-        </p>
+            {enOferta && (
+              <span className="text-sm font-semibold text-stone-warm-500 line-through">
+                {formatBs(product.compareAtPrice!)}
+              </span>
+            )}
+          </p>
+        )}
 
         {product.sizes.length > 0 && (
           <fieldset>
@@ -112,14 +120,29 @@ export default function ProductCard({ product }: { product: ProductDTO }) {
           </fieldset>
         )}
 
-        <button
-          type="button"
-          disabled={agotado || size === null}
-          onClick={() => size !== null && add(product, size)}
-          className="mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-jungle-600 py-2.5 font-display text-sm font-bold text-white transition hover:bg-jungle-500 disabled:cursor-not-allowed disabled:opacity-45"
-        >
-          {agotado ? "Sin stock" : "Agregar al carrito"}
-        </button>
+        {aConsultar ? (
+          <a
+            href={linkWhatsApp(
+              `Hola, quiero saber el precio del modelo ${product.name}${
+                size !== null ? ` en talla ${size}` : ""
+              }.`,
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-jungle-600 py-2.5 font-display text-sm font-bold text-white transition hover:bg-jungle-500"
+          >
+            Consultar precio
+          </a>
+        ) : (
+          <button
+            type="button"
+            disabled={agotado || size === null}
+            onClick={() => size !== null && add(product, size)}
+            className="mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-jungle-600 py-2.5 font-display text-sm font-bold text-white transition hover:bg-jungle-500 disabled:cursor-not-allowed disabled:opacity-45"
+          >
+            {agotado ? "Sin stock" : "Agregar al carrito"}
+          </button>
+        )}
       </div>
     </article>
   );

@@ -5,7 +5,7 @@ import AddToCartPanel from "@/components/AddToCartPanel";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import ProductThumb, { productTint } from "@/components/ProductThumb";
 import { getProductBySlug, getProducts } from "@/lib/data";
-import { formatBs } from "@/lib/format";
+import { formatBs, PRECIO_A_CONSULTAR, sinPrecio } from "@/lib/format";
 
 export const revalidate = 120;
 
@@ -81,16 +81,22 @@ export default async function ProductoPage({ params }: Props) {
             {product.name}
           </h1>
 
-          <p className="mt-3 flex items-baseline gap-3">
-            <span className="font-display text-4xl font-bold text-lava-600">
-              {formatBs(product.price)}
-            </span>
-            {enOferta && (
-              <span className="text-lg font-semibold text-stone-warm-500 line-through">
-                {formatBs(product.compareAtPrice!)}
+          {sinPrecio(product.price) ? (
+            <p className="mt-3 font-display text-2xl font-bold text-jungle-700">
+              {PRECIO_A_CONSULTAR}
+            </p>
+          ) : (
+            <p className="mt-3 flex items-baseline gap-3">
+              <span className="font-display text-4xl font-bold text-lava-600">
+                {formatBs(product.price)}
               </span>
-            )}
-          </p>
+              {enOferta && (
+                <span className="text-lg font-semibold text-stone-warm-500 line-through">
+                  {formatBs(product.compareAtPrice!)}
+                </span>
+              )}
+            </p>
+          )}
 
           {product.description && (
             <p className="mt-4 text-base font-semibold leading-relaxed text-jungle-900/80">

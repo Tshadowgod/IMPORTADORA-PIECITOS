@@ -19,9 +19,10 @@ import * as schema from "../src/db/schema";
  * por `slug`). Los datos están en `catalogo-dinos.json`, junto a este
  * archivo, y las fotos ya recortadas en `public/productos/dino/`.
  *
- * PARA PUBLICARLOS: el PDF no trae precios, así que entran ocultos. Pon el
- * precio de cada sección acá abajo, cambia `PUBLICAR` a true y vuelve a
- * correr el script: los que tengan precio pasan a verse en la tienda.
+ * PRECIOS: el PDF no los trae, así que todos entran en 0 y la tienda los
+ * muestra como "Precio a consultar" (botón de WhatsApp en vez de carrito).
+ * Cuando la importadora los defina, se ponen acá abajo y se vuelve a correr
+ * el script; ahí las fichas pasan solas a mostrar el precio y el carrito.
  */
 
 /** Precio en Bs. de cada sección. 0 = todavía sin precio. */
@@ -36,7 +37,19 @@ const PRECIOS: Record<string, number> = {
 };
 
 /** Con `false` los productos quedan cargados pero sin aparecer en la tienda. */
-const PUBLICAR = false;
+const PUBLICAR = true;
+
+/** Los que salen en "LOS MÁS RUGIENTES" de la portada: uno por sección. */
+const DESTACADOS = new Set([
+  "primeros-pasos-azul-plateado",
+  "primeros-pasos-plateado-rosa",
+  "primeros-pasos-oro",
+  "dino-clasico-cafe",
+  "dino-luces-azul-rojo-blanco",
+  "dino-3d-led-verde",
+  "dientes-3d-led-dorado",
+  "colegial-blanco",
+]);
 
 /** Los 8 productos inventados con los que se armó la tienda. */
 const DEMOS = [
@@ -80,8 +93,9 @@ async function main() {
 
   let publicados = 0;
   for (const m of modelos) {
+    // Sin precio igual se publican: la ficha invita a consultarlo por WhatsApp.
     const precio = PRECIOS[m.seccion] ?? 0;
-    const activo = PUBLICAR && precio > 0;
+    const activo = PUBLICAR;
     if (activo) publicados++;
     const valores = {
       name: m.nombre,
@@ -93,6 +107,7 @@ async function main() {
       color: m.color,
       stock: m.stock,
       isActive: activo,
+      isFeatured: DESTACADOS.has(m.slug),
       updatedAt: new Date(),
     };
     await db

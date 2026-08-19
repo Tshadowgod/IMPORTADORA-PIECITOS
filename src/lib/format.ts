@@ -14,3 +14,13 @@ export const COSTO_ENVIO = 15;
 export function calcularEnvio(subtotal: number): number {
   return subtotal >= ENVIO_GRATIS_DESDE ? 0 : COSTO_ENVIO;
 }
+
+/**
+ * Un modelo recién cargado todavía no tiene precio en la base (queda en 0).
+ * En la tienda nunca se muestra "Bs. 0": se invita a consultar por WhatsApp.
+ */
+export const PRECIO_A_CONSULTAR = "Precio a consultar";
+
+export function sinPrecio(price: number): boolean {
+  return !(price > 0);
+}

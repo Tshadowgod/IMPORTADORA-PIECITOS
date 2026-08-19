@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { useCart } from "./CartProvider";
-import { formatBs } from "@/lib/format";
+import { formatBs, sinPrecio } from "@/lib/format";
+import { linkWhatsApp } from "@/lib/tienda";
 import type { ProductDTO } from "@/lib/types";
 
 /** Selector de talla + cantidad de la ficha de producto. */
@@ -11,6 +12,7 @@ export default function AddToCartPanel({ product }: { product: ProductDTO }) {
   const [size, setSize] = useState<number | null>(product.sizes[0] ?? null);
   const [qty, setQty] = useState(1);
   const agotado = product.stock <= 0;
+  const aConsultar = sinPrecio(product.price);
 
   return (
     <div className="space-y-5">
@@ -61,21 +63,39 @@ export default function AddToCartPanel({ product }: { product: ProductDTO }) {
           </button>
         </div>
 
-        <button
-          type="button"
-          disabled={agotado || size === null}
-          onClick={() => size !== null && add(product, size, qty)}
-          className="flex flex-1 items-center justify-center gap-2 rounded-full bg-jungle-600 px-6 py-3 font-display text-base font-bold text-white transition hover:bg-jungle-500 disabled:cursor-not-allowed disabled:opacity-45"
-        >
-          <span aria-hidden>🛒</span>
-          {agotado ? "SIN STOCK" : `AGREGAR · ${formatBs(product.price * qty)}`}
-        </button>
+        {aConsultar ? (
+          <a
+            href={linkWhatsApp(
+              `Hola, quiero saber el precio de ${qty}× ${product.name}${
+                size !== null ? ` en talla ${size}` : ""
+              }.`,
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-jungle-600 px-6 py-3 font-display text-base font-bold text-white transition hover:bg-jungle-500"
+          >
+            <span aria-hidden>💬</span>
+            CONSULTAR PRECIO
+          </a>
+        ) : (
+          <button
+            type="button"
+            disabled={agotado || size === null}
+            onClick={() => size !== null && add(product, size, qty)}
+            className="flex flex-1 items-center justify-center gap-2 rounded-full bg-jungle-600 px-6 py-3 font-display text-base font-bold text-white transition hover:bg-jungle-500 disabled:cursor-not-allowed disabled:opacity-45"
+          >
+            <span aria-hidden>🛒</span>
+            {agotado ? "SIN STOCK" : `AGREGAR · ${formatBs(product.price * qty)}`}
+          </button>
+        )}
       </div>
 
       <p className="text-sm font-semibold text-jungle-900/70">
         {agotado
           ? "Este modelo se agotó. Escríbenos por WhatsApp para avisarte cuando vuelva."
-          : `Quedan ${product.stock} pares disponibles.`}
+          : aConsultar
+            ? "Escríbenos por WhatsApp y te pasamos el precio de este modelo al instante."
+            : `Quedan ${product.stock} pares disponibles.`}
       </p>
     </div>
   );
